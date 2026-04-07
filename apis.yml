@@ -2,93 +2,93 @@ name: Ansible
 description: Ansible is an open-source automation platform that provides simple IT automation for cloud provisioning, configuration management, application deployment, and orchestration.
 image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
 tags:
-- Automation
-- Configuration Management
-- DevOps
-- Infrastructure as Code
-- Orchestration
+  - Automation
+  - Configuration Management
+  - DevOps
+  - Infrastructure as Code
+  - Orchestration
 created: '2024'
 modified: '2024'
 url: https://www.ansible.com
 specificationVersion: '0.18'
 apis:
-- name: Ansible Automation Platform API
-  description: RESTful API for Ansible Automation Platform (formerly Ansible Tower) that enables programmatic access to job templates, inventories, credentials, and automation workflows.
-  image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
-  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
-  baseURL: https://your-controller-host/api/v2/
-  tags:
-  - Automation
-  - Jobs
-  - Workflows
-  - Inventories
-  properties:
-  - type: Documentation
-    url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
-  - type: OpenAPI
-    url: https://your-controller-host/api/v2/swagger/
-  - type: Authentication
-    url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/authentication.html
-  contact:
-  - FN: Ansible Support
-    email: ansible-support@redhat.com
-    url: https://access.redhat.com/support
-- name: AWX API
-  description: RESTful API for AWX (the open-source upstream project for Ansible Automation Platform) providing access to job management, inventory, and automation resources.
-  image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
-  humanURL: https://github.com/ansible/awx
-  baseURL: https://your-awx-host/api/v2/
-  tags:
-  - Open Source
-  - Automation
-  - Jobs
-  - REST API
-  properties:
-  - type: Documentation
-    url: https://docs.ansible.com/ansible-tower/latest/html/towerapi/
-  - type: GitHub Repository
-    url: https://github.com/ansible/awx
-  - type: API Explorer
-    url: https://your-awx-host/api/v2/
-- name: Ansible Galaxy API
-  description: API for Ansible Galaxy, a hub for finding, sharing, and downloading Ansible roles and collections.
-  image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
-  humanURL: https://galaxy.ansible.com/
-  baseURL: https://galaxy.ansible.com/api/
-  tags:
-  - Collections
-  - Roles
-  - Community
-  - Content
-  properties:
-  - type: Documentation
-    url: https://galaxy.ansible.com/docs/
-  - type: API Documentation
-    url: https://galaxy.ansible.com/api/v3/
-  - type: GitHub Repository
-    url: https://github.com/ansible/galaxy
+  - name: Ansible Automation Platform API
+    description: RESTful API for Ansible Automation Platform (formerly Ansible Tower) that enables programmatic access to job templates, inventories, credentials, and automation workflows.
+    image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
+    humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+    baseURL: https://your-controller-host/api/v2/
+    tags:
+      - Automation
+      - Inventories
+      - Jobs
+      - Workflows
+    properties:
+      - type: Documentation
+        url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+      - type: OpenAPI
+        url: https://your-controller-host/api/v2/swagger/
+      - type: Authentication
+        url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/authentication.html
+    contact:
+      - FN: Ansible Support
+        email: ansible-support@redhat.com
+        url: https://access.redhat.com/support
+  - name: AWX API
+    description: RESTful API for AWX (the open-source upstream project for Ansible Automation Platform) providing access to job management, inventory, and automation resources.
+    image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
+    humanURL: https://github.com/ansible/awx
+    baseURL: https://your-awx-host/api/v2/
+    tags:
+      - Automation
+      - Jobs
+      - Open Source
+      - REST API
+    properties:
+      - type: Documentation
+        url: https://docs.ansible.com/ansible-tower/latest/html/towerapi/
+      - type: GitHub Repository
+        url: https://github.com/ansible/awx
+      - type: API Explorer
+        url: https://your-awx-host/api/v2/
+  - name: Ansible Galaxy API
+    description: API for Ansible Galaxy, a hub for finding, sharing, and downloading Ansible roles and collections.
+    image: https://www.ansible.com/hubfs/Images/Red-Hat-Ansible_OG.png
+    humanURL: https://galaxy.ansible.com/
+    baseURL: https://galaxy.ansible.com/api/
+    tags:
+      - Collections
+      - Community
+      - Content
+      - Roles
+    properties:
+      - type: Documentation
+        url: https://galaxy.ansible.com/docs/
+      - type: API Documentation
+        url: https://galaxy.ansible.com/api/v3/
+      - type: GitHub Repository
+        url: https://github.com/ansible/galaxy
 common:
-- type: Portal
-  url: https://www.ansible.com
-- type: Getting Started
-  url: https://docs.ansible.com/ansible/latest/getting_started/
-- type: Documentation
-  url: https://docs.ansible.com/
-- type: Blog
-  url: https://www.ansible.com/blog
-- type: GitHub Organization
-  url: https://github.com/ansible
-- type: Community
-  url: https://www.ansible.com/community
-- type: Support
-  url: https://access.redhat.com/products/red-hat-ansible-automation-platform/
-- type: Training
-  url: https://www.ansible.com/products/training-certification
-- type: Terms of Service
-  url: https://www.redhat.com/en/about/terms-use
-- type: Privacy Policy
-  url: https://www.redhat.com/en/about/privacy-policy
+  - type: Portal
+    url: https://www.ansible.com
+  - type: Getting Started
+    url: https://docs.ansible.com/ansible/latest/getting_started/
+  - type: Documentation
+    url: https://docs.ansible.com/
+  - type: Blog
+    url: https://www.ansible.com/blog
+  - type: GitHub Organization
+    url: https://github.com/ansible
+  - type: Community
+    url: https://www.ansible.com/community
+  - type: Support
+    url: https://access.redhat.com/products/red-hat-ansible-automation-platform/
+  - type: Training
+    url: https://www.ansible.com/products/training-certification
+  - type: Terms of Service
+    url: https://www.redhat.com/en/about/terms-use
+  - type: Privacy Policy
+    url: https://www.redhat.com/en/about/privacy-policy
 maintainers:
-- FN: Red Hat Ansible Team
-  email: info@ansible.com
-  url: https://www.ansible.com
+  - FN: Red Hat Ansible Team
+    email: info@ansible.com
+    url: https://www.ansible.com
