@@ -1,0 +1,157 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Ansible
+  description: >-
+    Vocabulary covering the Ansible open-source automation platform including
+    core concepts, API resources, CLI commands, module types, and integration
+    patterns for the Ansible Automation Platform and AWX APIs.
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - name: Ansible Automation Platform API
+      namespace: aap
+      version: "v2"
+      baseUrl: https://your-controller-host/api/v2/
+      status: active
+    - name: AWX API
+      namespace: awx
+      version: "v2"
+      baseUrl: https://your-awx-host/api/v2/
+      status: active
+    - name: Ansible Galaxy API
+      namespace: galaxy
+      version: "v3"
+      baseUrl: https://galaxy.ansible.com/api/
+      status: active
+    - name: Ansible Automation Hub API
+      namespace: automation-hub
+      version: "v3"
+      baseUrl: https://console.redhat.com/api/automation-hub/v3/
+      status: active
+
+  resources:
+    - name: jobs
+      description: Playbook execution instances with status and output.
+      apis: [aap, awx]
+      actions: [create, get, list, cancel, relaunch, delete]
+    - name: job-templates
+      description: Reusable job configurations defining playbook, inventory, and credentials.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete, launch, copy]
+    - name: inventories
+      description: Host collections and groups targeted by playbook execution.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete, sync]
+    - name: hosts
+      description: Individual managed endpoints within inventories.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete]
+    - name: credentials
+      description: Stored authentication objects for accessing managed systems.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete, copy]
+    - name: projects
+      description: SCM-backed repositories containing playbooks.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete, sync, copy]
+    - name: workflow-templates
+      description: Directed acyclic graphs of job templates with conditional branching.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete, launch, copy]
+    - name: schedules
+      description: Time-based recurring triggers for job template execution.
+      apis: [aap, awx]
+      actions: [create, get, list, update, delete]
+    - name: collections
+      description: Distributable Ansible content packages with modules, roles, and plugins.
+      apis: [galaxy, automation-hub]
+      actions: [search, get, list, download, publish]
+
+  actions:
+    - name: launch
+      description: Start execution of a job template or workflow template.
+      http_method: POST
+      pattern: write
+    - name: create
+      description: Create a new resource.
+      http_method: POST
+      pattern: write
+    - name: get
+      description: Retrieve a single resource.
+      http_method: GET
+      pattern: read
+    - name: list
+      description: List resources with pagination and filtering.
+      http_method: GET
+      pattern: read
+    - name: update
+      description: Modify an existing resource.
+      http_method: PATCH
+      pattern: write
+    - name: delete
+      description: Remove a resource permanently.
+      http_method: DELETE
+      pattern: destructive
+    - name: cancel
+      description: Cancel a running job.
+      http_method: POST
+      pattern: write
+    - name: relaunch
+      description: Relaunch a completed job with the same or modified parameters.
+      http_method: POST
+      pattern: write
+    - name: sync
+      description: Synchronize a project from SCM or inventory from external source.
+      http_method: POST
+      pattern: write
+    - name: copy
+      description: Create a copy of an existing resource.
+      http_method: POST
+      pattern: write
+
+  schemas:
+    core:
+      - name: Playbook
+        description: A YAML automation definition containing plays, tasks, and roles.
+        key_properties: [name, hosts, become, gather_facts, vars, roles, tasks]
+      - name: Job
+        description: A single playbook execution record with status and output.
+        key_properties: [id, name, status, playbook, started, finished, elapsed]
+      - name: Inventory
+        description: A collection of managed hosts and groups.
+        key_properties: [id, name, organization, kind, total_hosts, variables]
+    content:
+      - name: Collection
+        description: A packaged bundle of Ansible content.
+        key_properties: [namespace, name, version, certified, requires_ansible]
+
+  enums:
+    job_status:
+      - new
+      - pending
+      - waiting
+      - running
+      - successful
+      - failed
+      - error
+      - canceled
+    job_type:
+      - run
+      - check
+      - scan
+    launch_type:
+      - manual
+      - scheduled
+      - workflow
+      - relaunch
+      - callback
+
+  authentication:
+    schemes:
+      - type: bearer
+        description: OAuth2 bearer token for AAP, AWX, and Automation Hub APIs.
+      - type: basic
+        description: HTTP Basic Auth for AWX and AAP API access.

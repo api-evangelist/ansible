@@ -1,0 +1,28 @@
+{
+  "name": "Deploy Web Application",
+  "hosts": "web-servers",
+  "become": true,
+  "become_user": "root",
+  "gather_facts": true,
+  "vars": {
+    "app_version": "2.4.1",
+    "deploy_user": "deploy"
+  },
+  "roles": ["nginx", "app-deploy"],
+  "tasks": [
+    {
+      "name": "Install Nginx",
+      "module": "ansible.builtin.package",
+      "when": "ansible_os_family == 'RedHat'",
+      "tags": ["install", "nginx"],
+      "notify": "restart nginx"
+    }
+  ],
+  "handlers": [
+    {
+      "name": "restart nginx",
+      "module": "ansible.builtin.service"
+    }
+  ],
+  "tags": ["deploy", "web"]
+}

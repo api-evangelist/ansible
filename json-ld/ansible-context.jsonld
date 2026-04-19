@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ansible": "https://api-evangelist.github.io/ansible/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Playbook": "ansible:Playbook",
+    "Task": "ansible:Task",
+    "name": "schema:name",
+    "description": "schema:description",
+    "hosts": {"@id": "ansible:hosts", "@type": "xsd:string"},
+    "become": {"@id": "ansible:become", "@type": "xsd:boolean"},
+    "becomeUser": {"@id": "ansible:become_user", "@type": "xsd:string"},
+    "gatherFacts": {"@id": "ansible:gather_facts", "@type": "xsd:boolean"},
+    "roles": {"@id": "ansible:roles", "@container": "@set", "@type": "xsd:string"},
+    "tasks": {"@id": "ansible:tasks", "@container": "@set", "@type": "@id"},
+    "handlers": {"@id": "ansible:handlers", "@container": "@set", "@type": "@id"},
+    "tags": {"@id": "ansible:tags", "@container": "@set", "@type": "xsd:string"},
+    "when": {"@id": "ansible:when", "@type": "xsd:string"},
+    "notify": {"@id": "ansible:notify", "@type": "xsd:string"}
+  }
+}

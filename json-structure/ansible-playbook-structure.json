@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/json-structure/ansible-playbook-structure.json",
+  "description": "An Ansible playbook \u2014 a YAML file containing one or more plays that map a group of hosts to a set of roles and tasks.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable name for the playbook play.",
+      "example": "Deploy Web Application"
+    },
+    "hosts": {
+      "type": "string",
+      "description": "Host or group pattern targeted by this play.",
+      "example": "web-servers"
+    },
+    "become": {
+      "type": "boolean",
+      "description": "Whether to run tasks with privilege escalation (sudo).",
+      "example": true
+    },
+    "become_user": {
+      "type": "string",
+      "description": "User to become when privilege escalation is enabled.",
+      "example": "root"
+    },
+    "gather_facts": {
+      "type": "boolean",
+      "description": "Whether to gather system facts before running tasks.",
+      "example": true
+    },
+    "vars": {
+      "type": "object",
+      "description": "Variables defined at the play level.",
+      "additionalProperties": true
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of roles applied to hosts in this play.",
+      "example": [
+        "nginx",
+        "app-deploy"
+      ]
+    },
+    "tasks": {
+      "type": "array",
+      "description": "List of tasks executed in this play.",
+      "items": {
+        "$ref": "#/$defs/Task"
+      }
+    },
+    "handlers": {
+      "type": "array",
+      "description": "Handlers triggered by task notifications.",
+      "items": {
+        "$ref": "#/$defs/Task"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for selective task execution.",
+      "example": [
+        "deploy",
+        "web"
+      ]
+    }
+  },
+  "required": [
+    "hosts"
+  ],
+  "name": "Playbook",
+  "definitions": {
+    "Task": {
+      "name": "Task",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Human-readable task description.",
+          "example": "Install Nginx"
+        },
+        "module": {
+          "type": "string",
+          "description": "Ansible module name used by this task.",
+          "example": "ansible.builtin.package"
+        },
+        "when": {
+          "type": "string",
+          "description": "Conditional expression for task execution.",
+          "example": "ansible_os_family == 'RedHat'"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Tags associated with this task."
+        },
+        "notify": {
+          "type": "string",
+          "description": "Handler name to notify upon task change.",
+          "example": "restart nginx"
+        }
+      }
+    }
+  }
+}
