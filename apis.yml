@@ -137,6 +137,8 @@ maintainers:
     X: apievangelist
     url: https://apievangelist.com
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ansible
   - type: Portal
     url: https://www.ansible.com
   - type: GettingStarted
