@@ -16,7 +16,7 @@ tags:
   - Orchestration
   - Red Hat
 created: "2024-01-01"
-modified: "2026-04-19"
+modified: "2026-05-19"
 url: https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/apis.yml
 specificationVersion: '0.16'
 apis:
@@ -238,3 +238,6 @@ common:
         description: >-
           Trigger Ansible automation from ServiceNow ITSM workflows using
           the ServiceNow ITX collection for change management automation.
+  - name: MCP Server
+    url: https://github.com/ansible/aap-mcp-server
+    type: MCPServer
