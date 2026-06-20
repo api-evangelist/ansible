@@ -5,7 +5,7 @@ description: >-
   provisioning, and orchestration. Using YAML-based playbooks and an
   SSH-native architecture, Ansible automates infrastructure at scale without
   requiring agents or custom security infrastructure on managed nodes.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Ansible
   - Automation
@@ -27,7 +27,7 @@ apis:
       workflow templates, schedules, notifications, and job execution. Supports
       OAuth2 authentication and delivers a comprehensive management interface
       for enterprise-scale Ansible deployments.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
     baseURL: https://your-controller-host/api/v2/
     tags:
@@ -57,7 +57,7 @@ apis:
       providing a web-based UI, REST API, and task engine for Ansible under the
       Apache 2.0 license. The AWX API mirrors the AAP API surface for job
       management, inventory, credentials, workflow templates, and scheduling.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://github.com/ansible/awx
     baseURL: https://your-awx-host/api/v2/
     tags:
@@ -85,7 +85,7 @@ apis:
       downloading Ansible roles and collections. The v1 API covers roles and
       the v3 API covers collections with namespace management, versioning,
       search, and content download capabilities.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://galaxy.ansible.com/
     baseURL: https://galaxy.ansible.com/api/
     tags:
@@ -111,7 +111,7 @@ apis:
       Ansible collections and roles curated by Red Hat and partners. Available
       through console.redhat.com, it serves certified content for enterprise
       Ansible Automation Platform deployments.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://console.redhat.com/ansible/automation-hub
     baseURL: https://console.redhat.com/api/automation-hub/v3/
     tags:
