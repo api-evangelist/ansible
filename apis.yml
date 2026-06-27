@@ -149,7 +149,7 @@ common:
     url: https://www.ansible.com/blog
   - type: GitHubOrganization
     url: https://github.com/ansible
-  - type: Forum
+  - type: Forums
     url: https://forum.ansible.com/
   - type: Support
     url: https://access.redhat.com/products/red-hat-ansible-automation-platform/
@@ -159,10 +159,10 @@ common:
     url: https://www.redhat.com/en/about/terms-use
   - type: PrivacyPolicy
     url: https://www.redhat.com/en/about/privacy-policy
-  - type: SDK
+  - type: SDKs
     url: https://pypi.org/project/ansible/
     title: Ansible Python Package
-  - type: SDK
+  - type: SDKs
     url: https://pypi.org/project/ansible-runner/
     title: Ansible Runner Python Package
   - type: JSONSchema
