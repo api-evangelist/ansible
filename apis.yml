@@ -137,6 +137,12 @@ maintainers:
     X: apievangelist
     url: https://apievangelist.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/ansible-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/ansible-domain-security.yml
+  - type: Authentication
+    url: authentication/ansible-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/ansible
   - type: Portal
