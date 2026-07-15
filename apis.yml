@@ -137,6 +137,8 @@ maintainers:
     X: apievangelist
     url: https://apievangelist.com
 common:
+  - type: AgenticAccess
+    url: agentic-access/ansible-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/ansible-vulnerability-disclosure.yml
   - type: DomainSecurity
