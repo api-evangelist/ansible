@@ -5,7 +5,20 @@ description: >-
   provisioning, and orchestration. Using YAML-based playbooks and an
   SSH-native architecture, Ansible automates infrastructure at scale without
   requiring agents or custom security infrastructure on managed nodes.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ansible.png
 tags:
   - Ansible
   - Automation
@@ -20,123 +33,238 @@ modified: "2026-05-19"
 url: https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/apis.yml
 specificationVersion: '0.16'
 apis:
-  - name: Ansible Automation Platform API
-    description: >-
-      RESTful API for Ansible Automation Platform (formerly Ansible Tower) that
-      provides programmatic access to job templates, inventories, credentials,
-      workflow templates, schedules, notifications, and job execution. Supports
-      OAuth2 authentication and delivers a comprehensive management interface
-      for enterprise-scale Ansible deployments.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
-    baseURL: https://your-controller-host/api/v2/
-    tags:
-      - Ansible
-      - Automation
-      - Enterprise
-      - Inventories
-      - Jobs
-      - Red Hat
-      - Workflows
-    properties:
-      - type: Documentation
-        url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
-      - type: APIReference
-        url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/api_ref.html
-      - type: Authentication
-        url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/authentication.html
-      - type: GettingStarted
-        url: https://docs.ansible.com/automation-controller/latest/html/quickstart/
-    contact:
-      - FN: Ansible Support
-        url: https://access.redhat.com/support
-
-  - name: AWX API
-    description: >-
-      AWX is the open-source upstream project for Ansible Automation Platform,
-      providing a web-based UI, REST API, and task engine for Ansible under the
-      Apache 2.0 license. The AWX API mirrors the AAP API surface for job
-      management, inventory, credentials, workflow templates, and scheduling.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://github.com/ansible/awx
-    baseURL: https://your-awx-host/api/v2/
-    tags:
-      - Ansible
-      - Automation
-      - AWX
-      - Jobs
-      - Open Source
-    properties:
-      - type: Documentation
-        url: https://ansible.readthedocs.io/projects/awx/en/latest/
-      - type: APIReference
-        url: https://github.com/ansible/awx/blob/devel/docs/rest_api.md
-      - type: GitHubRepository
-        url: https://github.com/ansible/awx
-      - type: GettingStarted
-        url: https://github.com/ansible/awx/blob/devel/INSTALL.md
-    contact:
-      - FN: AWX Community
-        url: https://github.com/ansible/awx/discussions
-
-  - name: Ansible Galaxy API
-    description: >-
-      REST API for Ansible Galaxy — the community hub for sharing and
-      downloading Ansible roles and collections. The v1 API covers roles and
-      the v3 API covers collections with namespace management, versioning,
-      search, and content download capabilities.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://galaxy.ansible.com/
-    baseURL: https://galaxy.ansible.com/api/
-    tags:
-      - Ansible
-      - Collections
-      - Community
-      - Galaxy
-      - Roles
-    properties:
-      - type: Documentation
-        url: https://galaxy.ansible.com/docs/
-      - type: APIReference
-        url: https://galaxy.ansible.com/api/v3/
-      - type: GitHubRepository
-        url: https://github.com/ansible/galaxy
-    contact:
-      - FN: Ansible Galaxy Team
-        url: https://github.com/ansible/galaxy/issues
-
-  - name: Ansible Automation Hub API
-    description: >-
-      The Red Hat Ansible Automation Hub API provides access to certified
-      Ansible collections and roles curated by Red Hat and partners. Available
-      through console.redhat.com, it serves certified content for enterprise
-      Ansible Automation Platform deployments.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://console.redhat.com/ansible/automation-hub
-    baseURL: https://console.redhat.com/api/automation-hub/v3/
-    tags:
-      - Ansible
-      - Certified Content
-      - Collections
-      - Enterprise
-      - Red Hat
-    properties:
-      - type: Documentation
-        url: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/
-      - type: APIReference
-        url: https://console.redhat.com/api/automation-hub/v3/
-      - type: Portal
-        url: https://console.redhat.com/ansible/automation-hub
-    contact:
-      - FN: Red Hat Support
-        url: https://access.redhat.com/support
-
+- name: Ansible Automation Platform API
+  description: >-
+    RESTful API for Ansible Automation Platform (formerly Ansible Tower) that provides programmatic access
+    to job templates, inventories, credentials, workflow templates, schedules, notifications, and job
+    execution. Supports OAuth2 authentication and delivers a comprehensive management interface for enterprise-scale
+    Ansible deployments.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Ansible
+  - Automation
+  - Enterprise
+  - Inventories
+  - Jobs
+  - Red Hat
+  - Workflows
+  properties:
+  - type: Documentation
+    url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  - type: APIReference
+    url: https://docs.ansible.com/automation-controller/latest/html/controllerapi/api_ref.html
+  - type: Authentication
+    url: >-
+      https://docs.ansible.com/automation-controller/latest/html/controllerapi/authentication.html
+  - type: GettingStarted
+    url: https://docs.ansible.com/automation-controller/latest/html/quickstart/
+  contact:
+  - FN: Ansible Support
+    url: https://access.redhat.com/support
+- name: AWX API
+  description: >-
+    AWX is the open-source upstream project for Ansible Automation Platform, providing a web-based UI,
+    REST API, and task engine for Ansible under the Apache 2.0 license. The AWX API mirrors the AAP API
+    surface for job management, inventory, credentials, workflow templates, and scheduling.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://github.com/ansible/awx
+  baseURL: https://your-awx-host/api/v2/
+  tags:
+  - Ansible
+  - Automation
+  - AWX
+  - Jobs
+  - Open Source
+  properties:
+  - type: Documentation
+    url: https://ansible.readthedocs.io/projects/awx/en/latest/
+  - type: APIReference
+    url: https://github.com/ansible/awx/blob/devel/docs/rest_api.md
+  - type: GitHubRepository
+    url: https://github.com/ansible/awx
+  - type: GettingStarted
+    url: https://github.com/ansible/awx/blob/devel/INSTALL.md
+  contact:
+  - FN: AWX Community
+    url: https://github.com/ansible/awx/discussions
+- name: Ansible Galaxy API
+  description: >-
+    REST API for Ansible Galaxy — the community hub for sharing and downloading Ansible roles and collections.
+    The v1 API covers roles and the v3 API covers collections with namespace management, versioning, search,
+    and content download capabilities.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://galaxy.ansible.com/
+  baseURL: https://galaxy.ansible.com/api/
+  tags:
+  - Ansible
+  - Collections
+  - Community
+  - Galaxy
+  - Roles
+  properties:
+  - type: Documentation
+    url: https://galaxy.ansible.com/docs/
+  - type: APIReference
+    url: https://galaxy.ansible.com/api/v3/
+  - type: GitHubRepository
+    url: https://github.com/ansible/galaxy
+  contact:
+  - FN: Ansible Galaxy Team
+    url: https://github.com/ansible/galaxy/issues
+- name: Ansible Automation Hub API
+  description: >-
+    The Red Hat Ansible Automation Hub API provides access to certified Ansible collections and roles
+    curated by Red Hat and partners. Available through console.redhat.com, it serves certified content
+    for enterprise Ansible Automation Platform deployments.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://console.redhat.com/ansible/automation-hub
+  baseURL: https://console.redhat.com/api/automation-hub/v3/
+  tags:
+  - Ansible
+  - Certified Content
+  - Collections
+  - Enterprise
+  - Red Hat
+  properties:
+  - type: Documentation
+    url: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/
+  - type: APIReference
+    url: https://console.redhat.com/api/automation-hub/v3/
+  - type: Portal
+    url: https://console.redhat.com/ansible/automation-hub
+  contact:
+  - FN: Red Hat Support
+    url: https://access.redhat.com/support
+- aid: ansible:ansible-auth-api
+  name: Ansible Auth API
+  description: OAuth2 token management.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Auth
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-auth-api-openapi.yml
+- aid: ansible:ansible-credentials-api
+  name: Ansible Credentials API
+  description: The Credentials API from Ansible — 1 operation(s) for credentials.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Credentials
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-credentials-api-openapi.yml
+- aid: ansible:ansible-hosts-api
+  name: Ansible Hosts API
+  description: The Hosts API from Ansible — 1 operation(s) for hosts.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Hosts
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-hosts-api-openapi.yml
+- aid: ansible:ansible-inventories-api
+  name: Ansible Inventories API
+  description: The Inventories API from Ansible — 2 operation(s) for inventories.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Inventories
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-inventories-api-openapi.yml
+- aid: ansible:ansible-job-templates-api
+  name: Ansible Job Templates API
+  description: The Job Templates API from Ansible — 3 operation(s) for job templates.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Job Templates
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-job-templates-api-openapi.yml
+- aid: ansible:ansible-jobs-api
+  name: Ansible Jobs API
+  description: The Jobs API from Ansible — 4 operation(s) for jobs.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Jobs
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-jobs-api-openapi.yml
+- aid: ansible:ansible-organizations-api
+  name: Ansible Organizations API
+  description: The Organizations API from Ansible — 2 operation(s) for organizations.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Organizations
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-organizations-api-openapi.yml
+- aid: ansible:ansible-projects-api
+  name: Ansible Projects API
+  description: The Projects API from Ansible — 3 operation(s) for projects.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-projects-api-openapi.yml
+- aid: ansible:ansible-schedules-api
+  name: Ansible Schedules API
+  description: The Schedules API from Ansible — 1 operation(s) for schedules.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Schedules
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-schedules-api-openapi.yml
+- aid: ansible:ansible-users-api
+  name: Ansible Users API
+  description: The Users API from Ansible — 1 operation(s) for users.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-users-api-openapi.yml
+- aid: ansible:ansible-workflow-job-templates-api
+  name: Ansible Workflow Job Templates API
+  description: The Workflow Job Templates API from Ansible — 2 operation(s) for workflow job templates.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Workflow Job Templates
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-workflow-job-templates-api-openapi.yml
+- aid: ansible:ansible-workflow-jobs-api
+  name: Ansible Workflow Jobs API
+  description: The Workflow Jobs API from Ansible — 1 operation(s) for workflow jobs.
+  humanURL: https://docs.ansible.com/automation-controller/latest/html/controllerapi/
+  baseURL: https://your-controller-host/api/v2/
+  tags:
+  - Workflow Jobs
+  properties:
+  - type: OpenAPI
+    url: openapi/ansible-workflow-jobs-api-openapi.yml
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
     X: apievangelist
     url: https://apievangelist.com
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/ansible/overview
   - type: AgenticAccess
     url: agentic-access/ansible-agentic-access.yml
   - type: VulnerabilityDisclosure
