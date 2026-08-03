@@ -1,0 +1,206 @@
+{
+  "info": {
+    "_postman_id": "960f9eeb-1daa-4de3-a7c8-0bc2f0187cf0",
+    "name": "Ansible Automation Controller Auth Hosts API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:00:58.000Z",
+    "updatedAt": "2026-07-28T01:00:58.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-960f9eeb-1daa-4de3-a7c8-0bc2f0187cf0"
+  },
+  "item": [
+    {
+      "name": "hosts",
+      "item": [
+        {
+          "name": "List hosts",
+          "id": "19486b9e-20a3-4eca-bab6-7365a11b466f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/hosts/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "hosts",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "95613551-58c9-46f7-9905-4119a0ae2327",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/hosts/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "hosts",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"culpa_f\": false,\n      \"dolor_e\": 3857614\n    },\n    {\n      \"qui_3\": 30359558,\n      \"magna_4d\": -21263883\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:00:58.000Z",
+              "updatedAt": "2026-07-28T01:00:58.000Z",
+              "uid": "35240-95613551-58c9-46f7-9905-4119a0ae2327"
+            }
+          ],
+          "createdAt": "2026-07-28T01:00:58.000Z",
+          "updatedAt": "2026-07-28T01:00:58.000Z",
+          "uid": "35240-19486b9e-20a3-4eca-bab6-7365a11b466f"
+        },
+        {
+          "name": "Create a host",
+          "id": "1e64d883-eff4-4291-92cc-58122b42d00a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"<string>\",\n  \"inventory\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"variables\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/hosts/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "hosts",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "e5f98171-a892-4907-a5bb-dba247fb1d1c",
+              "name": "Created.",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"inventory\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"variables\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/hosts/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "hosts",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:00:58.000Z",
+              "updatedAt": "2026-07-28T01:00:58.000Z",
+              "uid": "35240-e5f98171-a892-4907-a5bb-dba247fb1d1c"
+            }
+          ],
+          "createdAt": "2026-07-28T01:00:58.000Z",
+          "updatedAt": "2026-07-28T01:00:58.000Z",
+          "uid": "35240-1e64d883-eff4-4291-92cc-58122b42d00a"
+        }
+      ],
+      "id": "91477f53-40b8-4286-bff6-9162c6b9d562",
+      "createdAt": "2026-07-28T01:00:58.000Z",
+      "updatedAt": "2026-07-28T01:00:58.000Z",
+      "uid": "35240-91477f53-40b8-4286-bff6-9162c6b9d562"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "provider": "ansible",
+  "sources": [
+    "ansible-auth-api-openapi.yml",
+    "ansible-credentials-api-openapi.yml",
+    "ansible-hosts-api-openapi.yml",
+    "ansible-inventories-api-openapi.yml",
+    "ansible-job-templates-api-openapi.yml",
+    "ansible-jobs-api-openapi.yml",
+    "ansible-organizations-api-openapi.yml",
+    "ansible-projects-api-openapi.yml",
+    "ansible-schedules-api-openapi.yml",
+    "ansible-users-api-openapi.yml",
+    "ansible-workflow-job-templates-api-openapi.yml",
+    "ansible-workflow-jobs-api-openapi.yml"
+  ],
+  "outputs": [
+    "ansible-auth-api-openapi.yml",
+    "ansible-credentials-api-openapi.yml",
+    "ansible-hosts-api-openapi.yml",
+    "ansible-inventories-api-openapi.yml",
+    "ansible-job-templates-api-openapi.yml",
+    "ansible-jobs-api-openapi.yml",
+    "ansible-organizations-api-openapi.yml",
+    "ansible-projects-api-openapi.yml",
+    "ansible-schedules-api-openapi.yml",
+    "ansible-users-api-openapi.yml",
+    "ansible-workflow-job-templates-api-openapi.yml",
+    "ansible-workflow-jobs-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

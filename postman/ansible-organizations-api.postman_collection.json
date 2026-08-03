@@ -1,0 +1,497 @@
+{
+  "info": {
+    "_postman_id": "a35bab94-22e8-4f36-b575-f5ccd268dcd9",
+    "name": "Ansible Automation Controller Auth Organizations API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:01:27.000Z",
+    "updatedAt": "2026-07-28T01:01:27.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-a35bab94-22e8-4f36-b575-f5ccd268dcd9"
+  },
+  "item": [
+    {
+      "name": "organizations",
+      "item": [
+        {
+          "name": "{id}",
+          "item": [
+            {
+              "name": "Retrieve an organization",
+              "id": "603e0410-c845-451c-b4fc-0f24d2c45bbe",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/organizations/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "organizations",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "1081eeac-b03e-4539-84c2-d73d39c0310c",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "381bf8f8-b9f8-45cf-a6b4-c18810b87f87",
+                  "name": "An organization.",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/organizations/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "organizations",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:01:27.000Z",
+                  "updatedAt": "2026-07-28T01:01:27.000Z",
+                  "uid": "35240-381bf8f8-b9f8-45cf-a6b4-c18810b87f87"
+                }
+              ],
+              "createdAt": "2026-07-28T01:01:27.000Z",
+              "updatedAt": "2026-07-28T01:01:27.000Z",
+              "uid": "35240-603e0410-c845-451c-b4fc-0f24d2c45bbe"
+            },
+            {
+              "name": "Partially update an organization",
+              "id": "a92188a3-120e-4c24-a751-2e12209c6ab6",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"max_hosts\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/organizations/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "organizations",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "6a5a349c-fdee-472f-8954-562ad612d45f",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "bdc6cd16-0c9d-42dd-bd84-7e92715f0337",
+                  "name": "Updated.",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"max_hosts\": \"<integer>\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/organizations/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "organizations",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:01:27.000Z",
+                  "updatedAt": "2026-07-28T01:01:27.000Z",
+                  "uid": "35240-bdc6cd16-0c9d-42dd-bd84-7e92715f0337"
+                }
+              ],
+              "createdAt": "2026-07-28T01:01:27.000Z",
+              "updatedAt": "2026-07-28T01:01:27.000Z",
+              "uid": "35240-a92188a3-120e-4c24-a751-2e12209c6ab6"
+            },
+            {
+              "name": "Delete an organization",
+              "id": "760692f0-ca46-4a9f-981e-41b39a3dde64",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/organizations/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "organizations",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "befe0404-9c5c-4de9-8a76-1d4f9345e360",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "cbda5f1e-33ca-43e0-bbad-d498aaa1eb8d",
+                  "name": "Deleted.",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/organizations/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "organizations",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:01:27.000Z",
+                  "updatedAt": "2026-07-28T01:01:27.000Z",
+                  "uid": "35240-cbda5f1e-33ca-43e0-bbad-d498aaa1eb8d"
+                }
+              ],
+              "createdAt": "2026-07-28T01:01:27.000Z",
+              "updatedAt": "2026-07-28T01:01:27.000Z",
+              "uid": "35240-760692f0-ca46-4a9f-981e-41b39a3dde64"
+            }
+          ],
+          "id": "036206d0-ff40-4c76-93b0-31c5cff31367",
+          "createdAt": "2026-07-28T01:01:27.000Z",
+          "updatedAt": "2026-07-28T01:01:27.000Z",
+          "uid": "35240-036206d0-ff40-4c76-93b0-31c5cff31367"
+        },
+        {
+          "name": "List organizations",
+          "id": "9801e69e-b049-4075-9480-5c1b8dca62f4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/organizations/?page=1&page_size=25&search=<string>",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "organizations",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "page_size",
+                  "value": "25"
+                },
+                {
+                  "key": "search",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6d4ad5e0-6d3b-43c8-8d66-6ed67a240a49",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/organizations/?page=1&page_size=25&search=<string>",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "organizations",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "page_size",
+                      "value": "25"
+                    },
+                    {
+                      "key": "search",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"commodo0\": 67321319\n    },\n    {\n      \"ipsum_a\": 12055817.169814542\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:27.000Z",
+              "updatedAt": "2026-07-28T01:01:27.000Z",
+              "uid": "35240-6d4ad5e0-6d3b-43c8-8d66-6ed67a240a49"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:27.000Z",
+          "updatedAt": "2026-07-28T01:01:27.000Z",
+          "uid": "35240-9801e69e-b049-4075-9480-5c1b8dca62f4"
+        },
+        {
+          "name": "Create an organization",
+          "id": "c0e4aa37-10a1-4748-9ad3-a9b327b5324c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"max_hosts\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/organizations/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "organizations",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "7c2cad99-843d-426a-ae9a-253f953a02d1",
+              "name": "Created.",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"max_hosts\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/organizations/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "organizations",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:01:27.000Z",
+              "updatedAt": "2026-07-28T01:01:27.000Z",
+              "uid": "35240-7c2cad99-843d-426a-ae9a-253f953a02d1"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:27.000Z",
+          "updatedAt": "2026-07-28T01:01:27.000Z",
+          "uid": "35240-c0e4aa37-10a1-4748-9ad3-a9b327b5324c"
+        }
+      ],
+      "id": "cf70028f-3dab-44e5-8423-e92ebc7bda5c",
+      "createdAt": "2026-07-28T01:01:27.000Z",
+      "updatedAt": "2026-07-28T01:01:27.000Z",
+      "uid": "35240-cf70028f-3dab-44e5-8423-e92ebc7bda5c"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

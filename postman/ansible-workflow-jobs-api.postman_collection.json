@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "bc39385c-e573-4e93-91d9-727af9dbdd9b",
+    "name": "Ansible Automation Controller Auth Workflow Jobs API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:01:36.000Z",
+    "updatedAt": "2026-07-28T01:01:36.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-bc39385c-e573-4e93-91d9-727af9dbdd9b"
+  },
+  "item": [
+    {
+      "name": "workflow_jobs",
+      "item": [
+        {
+          "name": "List workflow jobs",
+          "id": "529c5d26-2d2e-4f72-b232-d27ccc4dc858",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/workflow_jobs/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "workflow_jobs",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1f04303e-ac59-49e6-9a01-c37a72c17b90",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/workflow_jobs/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "workflow_jobs",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"nullab8b\": 49711315\n    },\n    {\n      \"dolor2a\": true\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:36.000Z",
+              "updatedAt": "2026-07-28T01:01:36.000Z",
+              "uid": "35240-1f04303e-ac59-49e6-9a01-c37a72c17b90"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:36.000Z",
+          "updatedAt": "2026-07-28T01:01:36.000Z",
+          "uid": "35240-529c5d26-2d2e-4f72-b232-d27ccc4dc858"
+        }
+      ],
+      "id": "6e55f970-5781-4acf-abca-1bf51b5a5b58",
+      "createdAt": "2026-07-28T01:01:36.000Z",
+      "updatedAt": "2026-07-28T01:01:36.000Z",
+      "uid": "35240-6e55f970-5781-4acf-abca-1bf51b5a5b58"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

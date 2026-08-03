@@ -1,0 +1,365 @@
+{
+  "info": {
+    "_postman_id": "02017918-0ef0-4282-8016-2cda79e0b846",
+    "name": "Ansible Automation Controller Auth Inventories API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:00:58.000Z",
+    "updatedAt": "2026-07-28T01:00:59.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-02017918-0ef0-4282-8016-2cda79e0b846"
+  },
+  "item": [
+    {
+      "name": "inventories",
+      "item": [
+        {
+          "name": "{id}",
+          "item": [
+            {
+              "name": "Retrieve an inventory",
+              "id": "de8e8005-6912-4234-bddd-329ba011757e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/inventories/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "inventories",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "1303bb36-28be-416b-b930-493e8ff18cf6",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "47debb98-4d1e-41f7-85e2-6344deebec01",
+                  "name": "An inventory.",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/inventories/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "inventories",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:00:59.000Z",
+                  "updatedAt": "2026-07-28T01:00:59.000Z",
+                  "uid": "35240-47debb98-4d1e-41f7-85e2-6344deebec01"
+                }
+              ],
+              "createdAt": "2026-07-28T01:00:59.000Z",
+              "updatedAt": "2026-07-28T01:00:59.000Z",
+              "uid": "35240-de8e8005-6912-4234-bddd-329ba011757e"
+            },
+            {
+              "name": "Delete an inventory",
+              "id": "764b49b6-e2e6-4c56-b65a-5ae560ec0f38",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/inventories/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "inventories",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "0290f5db-566e-4bd4-ae4c-1bf7f6cc0507",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "75cc552b-7835-4941-ba0f-6650fd43c277",
+                  "name": "Deleted.",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/inventories/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "inventories",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:00:59.000Z",
+                  "updatedAt": "2026-07-28T01:00:59.000Z",
+                  "uid": "35240-75cc552b-7835-4941-ba0f-6650fd43c277"
+                }
+              ],
+              "createdAt": "2026-07-28T01:00:59.000Z",
+              "updatedAt": "2026-07-28T01:00:59.000Z",
+              "uid": "35240-764b49b6-e2e6-4c56-b65a-5ae560ec0f38"
+            }
+          ],
+          "id": "690569d3-67a8-4ff9-914d-e84ffcbdcf7e",
+          "createdAt": "2026-07-28T01:00:59.000Z",
+          "updatedAt": "2026-07-28T01:00:59.000Z",
+          "uid": "35240-690569d3-67a8-4ff9-914d-e84ffcbdcf7e"
+        },
+        {
+          "name": "List inventories",
+          "id": "b1888814-8d9d-4f85-8ef9-bd1d03a665ce",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/inventories/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "inventories",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "dca26d13-1029-4171-9f2e-eae8df548235",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/inventories/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "inventories",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"ipsumde0\": 51244479\n    },\n    {\n      \"sit_9b\": false\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:00:59.000Z",
+              "updatedAt": "2026-07-28T01:00:59.000Z",
+              "uid": "35240-dca26d13-1029-4171-9f2e-eae8df548235"
+            }
+          ],
+          "createdAt": "2026-07-28T01:00:59.000Z",
+          "updatedAt": "2026-07-28T01:00:59.000Z",
+          "uid": "35240-b1888814-8d9d-4f85-8ef9-bd1d03a665ce"
+        },
+        {
+          "name": "Create an inventory",
+          "id": "09b4aa1b-7d53-4c7b-9546-24596c99b78f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"<string>\",\n  \"organization\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"kind\": \"\",\n  \"variables\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/inventories/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "inventories",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "761f846a-40b2-43ed-93ee-0c43637beabd",
+              "name": "Created.",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"organization\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"kind\": \"\",\n  \"variables\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/inventories/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "inventories",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:00:59.000Z",
+              "updatedAt": "2026-07-28T01:00:59.000Z",
+              "uid": "35240-761f846a-40b2-43ed-93ee-0c43637beabd"
+            }
+          ],
+          "createdAt": "2026-07-28T01:00:59.000Z",
+          "updatedAt": "2026-07-28T01:00:59.000Z",
+          "uid": "35240-09b4aa1b-7d53-4c7b-9546-24596c99b78f"
+        }
+      ],
+      "id": "45873f1b-8271-45ff-9d8f-a0614e42a32e",
+      "createdAt": "2026-07-28T01:00:59.000Z",
+      "updatedAt": "2026-07-28T01:00:59.000Z",
+      "uid": "35240-45873f1b-8271-45ff-9d8f-a0614e42a32e"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

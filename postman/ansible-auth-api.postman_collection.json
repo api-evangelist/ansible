@@ -1,0 +1,206 @@
+{
+  "info": {
+    "_postman_id": "30dadc88-f9c9-4341-84e5-301c8ddc9c34",
+    "name": "Ansible Automation Controller Auth API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:00:55.000Z",
+    "updatedAt": "2026-07-28T01:00:55.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-30dadc88-f9c9-4341-84e5-301c8ddc9c34"
+  },
+  "item": [
+    {
+      "name": "tokens",
+      "item": [
+        {
+          "name": "List OAuth2 tokens",
+          "id": "a562a97a-620d-4c4a-afcc-66433d368cd1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/tokens/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tokens",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "cdcbc649-27b8-4a02-8993-f6f3d0b4b59e",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/tokens/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tokens",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"sed_ec6\": \"consequat fugiat dolore\"\n    },\n    {\n      \"enim_\": \"culpa sit aute\",\n      \"incdf\": \"ut voluptate laboris dolore\"\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:00:55.000Z",
+              "updatedAt": "2026-07-28T01:00:55.000Z",
+              "uid": "35240-cdcbc649-27b8-4a02-8993-f6f3d0b4b59e"
+            }
+          ],
+          "createdAt": "2026-07-28T01:00:55.000Z",
+          "updatedAt": "2026-07-28T01:00:55.000Z",
+          "uid": "35240-a562a97a-620d-4c4a-afcc-66433d368cd1"
+        },
+        {
+          "name": "Create an OAuth2 personal access token",
+          "id": "1213950b-1de4-4ba9-aed0-0493a152fbaf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"description\": \"<string>\",\n  \"scope\": \"write\",\n  \"application\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/tokens/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tokens",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "df5999f9-e904-4c15-9c69-4cf500a92fd6",
+              "name": "Token created.",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"description\": \"<string>\",\n  \"scope\": \"write\",\n  \"application\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/tokens/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tokens",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:00:55.000Z",
+              "updatedAt": "2026-07-28T01:00:55.000Z",
+              "uid": "35240-df5999f9-e904-4c15-9c69-4cf500a92fd6"
+            }
+          ],
+          "createdAt": "2026-07-28T01:00:55.000Z",
+          "updatedAt": "2026-07-28T01:00:55.000Z",
+          "uid": "35240-1213950b-1de4-4ba9-aed0-0493a152fbaf"
+        }
+      ],
+      "id": "fd720655-31fd-4ebc-8030-c512ad6c427e",
+      "createdAt": "2026-07-28T01:00:55.000Z",
+      "updatedAt": "2026-07-28T01:00:55.000Z",
+      "uid": "35240-fd720655-31fd-4ebc-8030-c512ad6c427e"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

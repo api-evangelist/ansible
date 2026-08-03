@@ -1,0 +1,413 @@
+{
+  "info": {
+    "_postman_id": "140c2195-4dc3-40d2-b99e-d64221edd3b5",
+    "name": "Ansible Automation Controller Auth Jobs API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:01:01.000Z",
+    "updatedAt": "2026-07-28T01:01:01.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-140c2195-4dc3-40d2-b99e-d64221edd3b5"
+  },
+  "item": [
+    {
+      "name": "jobs",
+      "item": [
+        {
+          "name": "{id}",
+          "item": [
+            {
+              "name": "cancel",
+              "item": [
+                {
+                  "name": "Cancel a job",
+                  "id": "4b531d46-b32d-45e8-a88f-c43afe653e67",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/jobs/:id/cancel/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "jobs",
+                        ":id",
+                        "cancel",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "id": "40418e5f-21fa-48c3-91ab-d64a1ae128fa",
+                          "key": "id",
+                          "value": "<integer>",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "70e562a2-a276-42f2-a960-fa860b1138ad",
+                      "name": "Cancel requested.",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "description": "Added as a part of security scheme: bearer",
+                            "key": "Authorization",
+                            "value": "Bearer <token>"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/jobs/:id/cancel/",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "jobs",
+                            ":id",
+                            "cancel",
+                            ""
+                          ],
+                          "variable": [
+                            {
+                              "key": "id"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Accepted",
+                      "code": 202,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T01:01:01.000Z",
+                      "updatedAt": "2026-07-28T01:01:01.000Z",
+                      "uid": "35240-70e562a2-a276-42f2-a960-fa860b1138ad"
+                    }
+                  ],
+                  "createdAt": "2026-07-28T01:01:01.000Z",
+                  "updatedAt": "2026-07-28T01:01:01.000Z",
+                  "uid": "35240-4b531d46-b32d-45e8-a88f-c43afe653e67"
+                }
+              ],
+              "id": "a45d0287-ffc4-43ac-8c47-5e90c938be80",
+              "createdAt": "2026-07-28T01:01:01.000Z",
+              "updatedAt": "2026-07-28T01:01:01.000Z",
+              "uid": "35240-a45d0287-ffc4-43ac-8c47-5e90c938be80"
+            },
+            {
+              "name": "stdout",
+              "item": [
+                {
+                  "name": "Get job stdout",
+                  "id": "5d13cc34-ad33-4973-9907-1da194738246",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/jobs/:id/stdout/?format=json",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "jobs",
+                        ":id",
+                        "stdout",
+                        ""
+                      ],
+                      "query": [
+                        {
+                          "key": "format",
+                          "value": "json"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "id": "7bc07050-7ebc-4c50-80fc-2188d0a27682",
+                          "key": "id",
+                          "value": "<integer>",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "e9e343f1-6f85-40f9-aaa0-7b98427b4f12",
+                      "name": "Job stdout in the requested format.",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "description": "Added as a part of security scheme: bearer",
+                            "key": "Authorization",
+                            "value": "Bearer <token>"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/jobs/:id/stdout/?format=json",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "jobs",
+                            ":id",
+                            "stdout",
+                            ""
+                          ],
+                          "query": [
+                            {
+                              "key": "format",
+                              "value": "json"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "id"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T01:01:01.000Z",
+                      "updatedAt": "2026-07-28T01:01:01.000Z",
+                      "uid": "35240-e9e343f1-6f85-40f9-aaa0-7b98427b4f12"
+                    }
+                  ],
+                  "createdAt": "2026-07-28T01:01:01.000Z",
+                  "updatedAt": "2026-07-28T01:01:01.000Z",
+                  "uid": "35240-5d13cc34-ad33-4973-9907-1da194738246"
+                }
+              ],
+              "id": "f77e112b-a6ad-4830-a6cf-57f913f958d6",
+              "createdAt": "2026-07-28T01:01:01.000Z",
+              "updatedAt": "2026-07-28T01:01:01.000Z",
+              "uid": "35240-f77e112b-a6ad-4830-a6cf-57f913f958d6"
+            },
+            {
+              "name": "Retrieve a job",
+              "id": "bc3ee8eb-19d8-47d8-9734-b5a7ae1a112f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/jobs/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "jobs",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "70e9c493-5f5a-4b86-9530-15cb01913e73",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "3f5cf056-79fb-4a96-af0d-fe319a31240f",
+                  "name": "A job.",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/jobs/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "jobs",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:01:01.000Z",
+                  "updatedAt": "2026-07-28T01:01:01.000Z",
+                  "uid": "35240-3f5cf056-79fb-4a96-af0d-fe319a31240f"
+                }
+              ],
+              "createdAt": "2026-07-28T01:01:01.000Z",
+              "updatedAt": "2026-07-28T01:01:01.000Z",
+              "uid": "35240-bc3ee8eb-19d8-47d8-9734-b5a7ae1a112f"
+            }
+          ],
+          "id": "c90ee98b-61a3-4896-976b-5af7f4eec853",
+          "createdAt": "2026-07-28T01:01:01.000Z",
+          "updatedAt": "2026-07-28T01:01:01.000Z",
+          "uid": "35240-c90ee98b-61a3-4896-976b-5af7f4eec853"
+        },
+        {
+          "name": "List jobs",
+          "id": "a1d1c03a-84d4-49cd-b973-296be637983f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/jobs/?page=1&page_size=25&status=error",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "jobs",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "page_size",
+                  "value": "25"
+                },
+                {
+                  "key": "status",
+                  "value": "error"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "5129f2fe-e720-4209-bd37-f7487b8e29c8",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/jobs/?page=1&page_size=25&status=error",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "jobs",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "page_size",
+                      "value": "25"
+                    },
+                    {
+                      "key": "status",
+                      "value": "error"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"in_83b\": false\n    },\n    {\n      \"anim3b7\": \"incididunt\",\n      \"ex_811\": -85050251.71009737\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:01.000Z",
+              "updatedAt": "2026-07-28T01:01:01.000Z",
+              "uid": "35240-5129f2fe-e720-4209-bd37-f7487b8e29c8"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:01.000Z",
+          "updatedAt": "2026-07-28T01:01:01.000Z",
+          "uid": "35240-a1d1c03a-84d4-49cd-b973-296be637983f"
+        }
+      ],
+      "id": "6c466872-debd-447a-9409-9801ec3cd897",
+      "createdAt": "2026-07-28T01:01:01.000Z",
+      "updatedAt": "2026-07-28T01:01:01.000Z",
+      "uid": "35240-6c466872-debd-447a-9409-9801ec3cd897"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "info": {
+    "_postman_id": "94089ab5-e94d-4437-93c3-1f76758244e0",
+    "name": "Ansible Automation Controller Auth Users API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:01:34.000Z",
+    "updatedAt": "2026-07-28T01:01:34.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-94089ab5-e94d-4437-93c3-1f76758244e0"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "List users",
+          "id": "752f9d67-d4a3-4b79-b8e8-5698e701bc65",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/users/?page=1&page_size=25",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "page_size",
+                  "value": "25"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "405bb711-c3f7-4924-8db1-6f5a1b9069df",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/users/?page=1&page_size=25",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "users",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "page_size",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"in_b_\": -8153637,\n      \"consectetur38\": false,\n      \"dolor_a\": true\n    },\n    {\n      \"adf8c\": false\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:35.000Z",
+              "updatedAt": "2026-07-28T01:01:35.000Z",
+              "uid": "35240-405bb711-c3f7-4924-8db1-6f5a1b9069df"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:35.000Z",
+          "updatedAt": "2026-07-28T01:01:35.000Z",
+          "uid": "35240-752f9d67-d4a3-4b79-b8e8-5698e701bc65"
+        },
+        {
+          "name": "Create a user",
+          "id": "71559580-fd11-4999-aa07-b9ecbe76e7ce",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"is_superuser\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/users/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "16bf8199-f102-46bd-bb04-78251041c387",
+              "name": "Created.",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"is_superuser\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/users/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "users",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:01:35.000Z",
+              "updatedAt": "2026-07-28T01:01:35.000Z",
+              "uid": "35240-16bf8199-f102-46bd-bb04-78251041c387"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:35.000Z",
+          "updatedAt": "2026-07-28T01:01:35.000Z",
+          "uid": "35240-71559580-fd11-4999-aa07-b9ecbe76e7ce"
+        }
+      ],
+      "id": "04c12303-0917-4c23-9949-cbbc0c70d846",
+      "createdAt": "2026-07-28T01:01:35.000Z",
+      "updatedAt": "2026-07-28T01:01:35.000Z",
+      "uid": "35240-04c12303-0917-4c23-9949-cbbc0c70d846"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

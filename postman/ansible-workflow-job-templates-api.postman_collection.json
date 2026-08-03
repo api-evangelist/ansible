@@ -1,0 +1,241 @@
+{
+  "info": {
+    "_postman_id": "ad2a9a19-930f-40f0-a9cd-41109d8ecc0b",
+    "name": "Ansible Automation Controller Auth Workflow Job Templates API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:01:35.000Z",
+    "updatedAt": "2026-07-28T01:01:35.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-ad2a9a19-930f-40f0-a9cd-41109d8ecc0b"
+  },
+  "item": [
+    {
+      "name": "workflow_job_templates",
+      "item": [
+        {
+          "name": "{id}",
+          "item": [
+            {
+              "name": "launch",
+              "item": [
+                {
+                  "name": "Launch a workflow job template",
+                  "id": "65ba66d4-38a0-4725-a8e6-db61d499d6cf",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"extra_vars\": {\n    \"dolord5\": false\n  }\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/workflow_job_templates/:id/launch/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "workflow_job_templates",
+                        ":id",
+                        "launch",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "id": "c50f06ea-460a-43a5-8a15-9c2c77da6c9c",
+                          "key": "id",
+                          "value": "<integer>",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "45047cf1-0c43-45cd-b813-585290c69a04",
+                      "name": "Workflow job launched.",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "description": "Added as a part of security scheme: bearer",
+                            "key": "Authorization",
+                            "value": "Bearer <token>"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"extra_vars\": {\n    \"dolord5\": false\n  }\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/workflow_job_templates/:id/launch/",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "workflow_job_templates",
+                            ":id",
+                            "launch",
+                            ""
+                          ],
+                          "variable": [
+                            {
+                              "key": "id"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T01:01:36.000Z",
+                      "updatedAt": "2026-07-28T01:01:36.000Z",
+                      "uid": "35240-45047cf1-0c43-45cd-b813-585290c69a04"
+                    }
+                  ],
+                  "createdAt": "2026-07-28T01:01:36.000Z",
+                  "updatedAt": "2026-07-28T01:01:36.000Z",
+                  "uid": "35240-65ba66d4-38a0-4725-a8e6-db61d499d6cf"
+                }
+              ],
+              "id": "7885e732-a820-46c9-be85-ee694a8474fa",
+              "createdAt": "2026-07-28T01:01:36.000Z",
+              "updatedAt": "2026-07-28T01:01:36.000Z",
+              "uid": "35240-7885e732-a820-46c9-be85-ee694a8474fa"
+            }
+          ],
+          "id": "fe8d5da3-247a-4333-bbc9-ddc67069572b",
+          "createdAt": "2026-07-28T01:01:36.000Z",
+          "updatedAt": "2026-07-28T01:01:36.000Z",
+          "uid": "35240-fe8d5da3-247a-4333-bbc9-ddc67069572b"
+        },
+        {
+          "name": "List workflow job templates",
+          "id": "f5ac2811-b9b9-4b96-914a-0df8dae3d1d0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/workflow_job_templates/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "workflow_job_templates",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "280609b8-2b89-46b4-8727-1fe9f190c65a",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/workflow_job_templates/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "workflow_job_templates",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"consequat_da\": -70593402.95967118\n    },\n    {\n      \"pariatura\": -95754461\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:36.000Z",
+              "updatedAt": "2026-07-28T01:01:36.000Z",
+              "uid": "35240-280609b8-2b89-46b4-8727-1fe9f190c65a"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:36.000Z",
+          "updatedAt": "2026-07-28T01:01:36.000Z",
+          "uid": "35240-f5ac2811-b9b9-4b96-914a-0df8dae3d1d0"
+        }
+      ],
+      "id": "45245657-bcb5-4743-8de1-1907a69ce060",
+      "createdAt": "2026-07-28T01:01:36.000Z",
+      "updatedAt": "2026-07-28T01:01:36.000Z",
+      "uid": "35240-45245657-bcb5-4743-8de1-1907a69ce060"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

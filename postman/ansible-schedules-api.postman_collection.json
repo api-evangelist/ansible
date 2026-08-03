@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "3e244dce-ca2e-4827-9b2c-97ec705807bf",
+    "name": "Ansible Automation Controller Auth Schedules API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:01:33.000Z",
+    "updatedAt": "2026-07-28T01:01:33.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-3e244dce-ca2e-4827-9b2c-97ec705807bf"
+  },
+  "item": [
+    {
+      "name": "schedules",
+      "item": [
+        {
+          "name": "List schedules",
+          "id": "925e8640-c88a-499c-921d-049ea4cad604",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/schedules/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "schedules",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1bf15381-1851-4c46-bcdf-49ff12a9f782",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/schedules/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "schedules",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"irure_a\": \"fugiat eiusmod nisi consectetur\",\n      \"ea9b1\": 94183721,\n      \"Excepteura__\": 2968740.079930797,\n      \"dolore_1b1\": -10194987\n    },\n    {\n      \"Ut_4\": \"a\",\n      \"nostrud9_a\": \"eiusmod in ad dolor consectetur\"\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:34.000Z",
+              "updatedAt": "2026-07-28T01:01:34.000Z",
+              "uid": "35240-1bf15381-1851-4c46-bcdf-49ff12a9f782"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:34.000Z",
+          "updatedAt": "2026-07-28T01:01:34.000Z",
+          "uid": "35240-925e8640-c88a-499c-921d-049ea4cad604"
+        }
+      ],
+      "id": "1cd74134-1800-441d-a89c-9059e6c640f2",
+      "createdAt": "2026-07-28T01:01:34.000Z",
+      "updatedAt": "2026-07-28T01:01:34.000Z",
+      "uid": "35240-1cd74134-1800-441d-a89c-9059e6c640f2"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}

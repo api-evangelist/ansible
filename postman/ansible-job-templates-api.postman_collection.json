@@ -1,0 +1,405 @@
+{
+  "info": {
+    "_postman_id": "f46f1c40-c067-4f60-82b8-fdabd1c019df",
+    "name": "Ansible Automation Controller Auth Job Templates API",
+    "description": "REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),\nthe enterprise-grade automation engine inside the Red Hat Ansible Automation\nPlatform. The API exposes management of inventories, hosts, credentials,\nprojects, job templates, workflow job templates, schedules, organizations,\nteams, users, and the launching and inspection of jobs.\n\n\nContact Support:\n Name: Red Hat Ansible Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:00:59.000Z",
+    "updatedAt": "2026-07-28T01:01:00.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-f46f1c40-c067-4f60-82b8-fdabd1c019df"
+  },
+  "item": [
+    {
+      "name": "job_templates",
+      "item": [
+        {
+          "name": "{id}",
+          "item": [
+            {
+              "name": "launch",
+              "item": [
+                {
+                  "name": "Launch a job template",
+                  "id": "60206402-a366-408d-aeb1-91e8e12ed6f4",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"extra_vars\": {\n    \"incididunt_8\": 96433829\n  },\n  \"limit\": \"<string>\",\n  \"inventory\": \"<integer>\",\n  \"credentials\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"job_tags\": \"<string>\",\n  \"skip_tags\": \"<string>\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/job_templates/:id/launch/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "job_templates",
+                        ":id",
+                        "launch",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "id": "5bb99ea0-443a-4717-a4b4-989d2228829f",
+                          "key": "id",
+                          "value": "<integer>",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "f7b619ad-023f-457e-bcf0-fc4c30a92014",
+                      "name": "Job launched. Returns the created job.",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "description": "Added as a part of security scheme: bearer",
+                            "key": "Authorization",
+                            "value": "Bearer <token>"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"extra_vars\": {\n    \"incididunt_8\": 96433829\n  },\n  \"limit\": \"<string>\",\n  \"inventory\": \"<integer>\",\n  \"credentials\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"job_tags\": \"<string>\",\n  \"skip_tags\": \"<string>\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/job_templates/:id/launch/",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "job_templates",
+                            ":id",
+                            "launch",
+                            ""
+                          ],
+                          "variable": [
+                            {
+                              "key": "id"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T01:01:00.000Z",
+                      "updatedAt": "2026-07-28T01:01:00.000Z",
+                      "uid": "35240-f7b619ad-023f-457e-bcf0-fc4c30a92014"
+                    }
+                  ],
+                  "createdAt": "2026-07-28T01:01:00.000Z",
+                  "updatedAt": "2026-07-28T01:01:00.000Z",
+                  "uid": "35240-60206402-a366-408d-aeb1-91e8e12ed6f4"
+                }
+              ],
+              "id": "6368d54e-2314-4e28-bce1-6fecfed13896",
+              "createdAt": "2026-07-28T01:01:00.000Z",
+              "updatedAt": "2026-07-28T01:01:00.000Z",
+              "uid": "35240-6368d54e-2314-4e28-bce1-6fecfed13896"
+            },
+            {
+              "name": "Retrieve a job template",
+              "id": "b612d10b-4d4e-42ce-866c-898b84defc1e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/job_templates/:id/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "job_templates",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "id": "718a94a0-d6f7-40a3-bd11-2db0bb2d1cb7",
+                      "key": "id",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "a74dc988-141b-4e56-9bfb-070ace2d8fa6",
+                  "name": "A job template.",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/job_templates/:id/",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "job_templates",
+                        ":id",
+                        ""
+                      ],
+                      "variable": [
+                        {
+                          "key": "id"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T01:01:00.000Z",
+                  "updatedAt": "2026-07-28T01:01:00.000Z",
+                  "uid": "35240-a74dc988-141b-4e56-9bfb-070ace2d8fa6"
+                }
+              ],
+              "createdAt": "2026-07-28T01:01:00.000Z",
+              "updatedAt": "2026-07-28T01:01:00.000Z",
+              "uid": "35240-b612d10b-4d4e-42ce-866c-898b84defc1e"
+            }
+          ],
+          "id": "52ca65f1-3740-4a7e-8d99-e80fdbcbe0bf",
+          "createdAt": "2026-07-28T01:01:00.000Z",
+          "updatedAt": "2026-07-28T01:01:00.000Z",
+          "uid": "35240-52ca65f1-3740-4a7e-8d99-e80fdbcbe0bf"
+        },
+        {
+          "name": "List job templates",
+          "id": "c77ce529-ea2d-4ddd-beaa-c7292cf19bd2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/job_templates/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "job_templates",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "340a3d98-34aa-479a-b073-4c09c731aa57",
+              "name": "A paginated list response.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/job_templates/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "job_templates",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": \"<integer>\",\n  \"next\": \"<string>\",\n  \"previous\": \"<string>\",\n  \"results\": [\n    {\n      \"reprehenderit_51\": \"magna in\",\n      \"Ut5\": \"do dolor\",\n      \"laboris_3b9\": 39409938,\n      \"anim_a\": 1569076.9394934624\n    },\n    {\n      \"non498\": -67908496.46793613\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:01:00.000Z",
+              "updatedAt": "2026-07-28T01:01:00.000Z",
+              "uid": "35240-340a3d98-34aa-479a-b073-4c09c731aa57"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:00.000Z",
+          "updatedAt": "2026-07-28T01:01:00.000Z",
+          "uid": "35240-c77ce529-ea2d-4ddd-beaa-c7292cf19bd2"
+        },
+        {
+          "name": "Create a job template",
+          "id": "29341e84-56d9-4744-a588-51fe39cb1a95",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"<string>\",\n  \"job_type\": \"check\",\n  \"inventory\": \"<integer>\",\n  \"project\": \"<integer>\",\n  \"playbook\": \"<string>\",\n  \"description\": \"<string>\",\n  \"credentials\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"limit\": \"<string>\",\n  \"verbosity\": \"<integer>\",\n  \"extra_vars\": \"<string>\",\n  \"ask_variables_on_launch\": \"<boolean>\",\n  \"ask_limit_on_launch\": \"<boolean>\",\n  \"ask_tags_on_launch\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/job_templates/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "job_templates",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1e7fede7-6439-4dcf-a61f-da56a71d52da",
+              "name": "Created.",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"job_type\": \"check\",\n  \"inventory\": \"<integer>\",\n  \"project\": \"<integer>\",\n  \"playbook\": \"<string>\",\n  \"description\": \"<string>\",\n  \"credentials\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"limit\": \"<string>\",\n  \"verbosity\": \"<integer>\",\n  \"extra_vars\": \"<string>\",\n  \"ask_variables_on_launch\": \"<boolean>\",\n  \"ask_limit_on_launch\": \"<boolean>\",\n  \"ask_tags_on_launch\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/job_templates/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "job_templates",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:01:00.000Z",
+              "updatedAt": "2026-07-28T01:01:00.000Z",
+              "uid": "35240-1e7fede7-6439-4dcf-a61f-da56a71d52da"
+            }
+          ],
+          "createdAt": "2026-07-28T01:01:00.000Z",
+          "updatedAt": "2026-07-28T01:01:00.000Z",
+          "uid": "35240-29341e84-56d9-4744-a588-51fe39cb1a95"
+        }
+      ],
+      "id": "286519b1-30d7-40f7-8423-05b00c3810d4",
+      "createdAt": "2026-07-28T01:01:00.000Z",
+      "updatedAt": "2026-07-28T01:01:00.000Z",
+      "uid": "35240-286519b1-30d7-40f7-8423-05b00c3810d4"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "controller_host",
+      "value": "controller.example.com"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{controller_host}}/api/v2"
+    }
+  ]
+}
