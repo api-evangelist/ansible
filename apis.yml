@@ -31,7 +31,7 @@ tags:
 created: "2024-01-01"
 modified: "2026-05-19"
 url: https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/apis.yml
-specificationVersion: '0.16'
+specificationVersion: '0.23'
 apis:
 - name: Ansible Automation Platform API
   description: >-
