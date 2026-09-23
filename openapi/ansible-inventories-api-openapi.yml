@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Ansible Automation Controller Auth Inventories API
+  title: Ansible Automation Controller Inventories API
   version: '2'
   description: 'REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),
 
@@ -10,9 +10,7 @@ info:
 
     projects, job templates, workflow job templates, schedules, organizations,
 
-    teams, users, and the launching and inspection of jobs.
-
-    '
+    teams, users, and the launching and inspection of jobs.'
   contact:
     name: Red Hat Ansible Support
     url: https://access.redhat.com/products/red-hat-ansible-automation-platform/
@@ -75,6 +73,22 @@ paths:
           description: Deleted.
 components:
   schemas:
+    ListResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+        next:
+          type: string
+          nullable: true
+        previous:
+          type: string
+          nullable: true
+        results:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
     Inventory:
       type: object
       required:
@@ -94,29 +108,6 @@ components:
           - smart
         variables:
           type: string
-    ListResponse:
-      type: object
-      properties:
-        count:
-          type: integer
-        next:
-          type: string
-          nullable: true
-        previous:
-          type: string
-          nullable: true
-        results:
-          type: array
-          items:
-            type: object
-            additionalProperties: true
-  responses:
-    ListResponse:
-      description: A paginated list response.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ListResponse'
   parameters:
     Id:
       name: id
@@ -124,6 +115,13 @@ components:
       required: true
       schema:
         type: integer
+  responses:
+    ListResponse:
+      description: A paginated list response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ListResponse'
   securitySchemes:
     OAuth2Token:
       type: http

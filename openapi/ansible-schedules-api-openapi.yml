@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Ansible Automation Controller Auth Schedules API
+  title: Ansible Automation Controller Schedules API
   version: '2'
   description: 'REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),
 
@@ -10,9 +10,7 @@ info:
 
     projects, job templates, workflow job templates, schedules, organizations,
 
-    teams, users, and the launching and inspection of jobs.
-
-    '
+    teams, users, and the launching and inspection of jobs.'
   contact:
     name: Red Hat Ansible Support
     url: https://access.redhat.com/products/red-hat-ansible-automation-platform/
@@ -39,13 +37,6 @@ paths:
         '200':
           $ref: '#/components/responses/ListResponse'
 components:
-  responses:
-    ListResponse:
-      description: A paginated list response.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ListResponse'
   schemas:
     ListResponse:
       type: object
@@ -63,6 +54,13 @@ components:
           items:
             type: object
             additionalProperties: true
+  responses:
+    ListResponse:
+      description: A paginated list response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ListResponse'
   securitySchemes:
     OAuth2Token:
       type: http

@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Ansible Automation Controller Auth Users API
+  title: Ansible Automation Controller Users API
   version: '2'
   description: 'REST API for Ansible Automation Controller (formerly Ansible Tower / AWX),
 
@@ -10,9 +10,7 @@ info:
 
     projects, job templates, workflow job templates, schedules, organizations,
 
-    teams, users, and the launching and inspection of jobs.
-
-    '
+    teams, users, and the launching and inspection of jobs.'
   contact:
     name: Red Hat Ansible Support
     url: https://access.redhat.com/products/red-hat-ansible-automation-platform/
@@ -71,6 +69,22 @@ paths:
         '201':
           description: Created.
 components:
+  parameters:
+    PageSize:
+      name: page_size
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 200
+        default: 25
+    Page:
+      name: page
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
   schemas:
     ListResponse:
       type: object
@@ -95,22 +109,6 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ListResponse'
-  parameters:
-    PageSize:
-      name: page_size
-      in: query
-      schema:
-        type: integer
-        minimum: 1
-        maximum: 200
-        default: 25
-    Page:
-      name: page
-      in: query
-      schema:
-        type: integer
-        minimum: 1
-        default: 1
   securitySchemes:
     OAuth2Token:
       type: http
