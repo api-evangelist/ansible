@@ -92,33 +92,6 @@ paths:
         '204':
           description: Deleted.
 components:
-  parameters:
-    PageSize:
-      name: page_size
-      in: query
-      schema:
-        type: integer
-        minimum: 1
-        maximum: 200
-        default: 25
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: integer
-    Search:
-      name: search
-      in: query
-      schema:
-        type: string
-    Page:
-      name: page
-      in: query
-      schema:
-        type: integer
-        minimum: 1
-        default: 1
   schemas:
     Organization:
       type: object
@@ -147,6 +120,33 @@ components:
           items:
             type: object
             additionalProperties: true
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
+    Page:
+      name: page
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    Search:
+      name: search
+      in: query
+      schema:
+        type: string
+    PageSize:
+      name: page_size
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 200
+        default: 25
   responses:
     ListResponse:
       description: A paginated list response.

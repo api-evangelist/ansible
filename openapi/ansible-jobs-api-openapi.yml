@@ -98,14 +98,6 @@ paths:
           description: Job stdout in the requested format.
 components:
   parameters:
-    PageSize:
-      name: page_size
-      in: query
-      schema:
-        type: integer
-        minimum: 1
-        maximum: 200
-        default: 25
     Id:
       name: id
       in: path
@@ -119,13 +111,14 @@ components:
         type: integer
         minimum: 1
         default: 1
-  responses:
-    ListResponse:
-      description: A paginated list response.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ListResponse'
+    PageSize:
+      name: page_size
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 200
+        default: 25
   schemas:
     ListResponse:
       type: object
@@ -143,6 +136,13 @@ components:
           items:
             type: object
             additionalProperties: true
+  responses:
+    ListResponse:
+      description: A paginated list response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ListResponse'
   securitySchemes:
     OAuth2Token:
       type: http

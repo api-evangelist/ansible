@@ -72,6 +72,13 @@ paths:
         '204':
           description: Deleted.
 components:
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
   schemas:
     ListResponse:
       type: object
@@ -108,13 +115,6 @@ components:
           - smart
         variables:
           type: string
-  parameters:
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: integer
   responses:
     ListResponse:
       description: A paginated list response.

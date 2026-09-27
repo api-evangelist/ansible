@@ -58,6 +58,13 @@ paths:
         '201':
           description: Workflow job launched.
 components:
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
   schemas:
     ListResponse:
       type: object
@@ -75,13 +82,6 @@ components:
           items:
             type: object
             additionalProperties: true
-  parameters:
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: integer
   responses:
     ListResponse:
       description: A paginated list response.

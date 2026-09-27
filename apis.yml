@@ -4,17 +4,21 @@ description: Ansible is an open-source IT automation platform developed by Red H
   playbooks and an SSH-native architecture, Ansible automates infrastructure at scale without requiring
   agents or custom security infrastructure on managed nodes.
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - ansible/awx
+    - ansible/galaxy
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - openapi
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -40,7 +44,7 @@ tags:
 - Configuration Management
 - DevOps
 - Infrastructure as Code
-- Open-Source
+- Open Source
 - Orchestration
 - Red Hat
 tags_raw:
@@ -52,6 +56,7 @@ tags_raw:
 - Open Source
 - Orchestration
 - Red Hat
+- Open-Source
 created: '2024-01-01'
 modified: '2026-09-16'
 url: https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/apis.yml
@@ -105,13 +110,14 @@ apis:
   - Automation
   - AWX
   - Job
-  - Open-Source
+  - Open Source
   tags_raw:
   - Ansible
   - Automation
   - AWX
   - Jobs
   - Open Source
+  - Open-Source
   properties:
   - type: Documentation
     url: https://ansible.readthedocs.io/projects/awx/en/latest/
