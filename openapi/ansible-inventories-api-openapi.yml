@@ -72,13 +72,13 @@ paths:
         '204':
           description: Deleted.
 components:
-  parameters:
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: integer
+  responses:
+    ListResponse:
+      description: A paginated list response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ListResponse'
   schemas:
     ListResponse:
       type: object
@@ -115,13 +115,13 @@ components:
           - smart
         variables:
           type: string
-  responses:
-    ListResponse:
-      description: A paginated list response.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ListResponse'
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
   securitySchemes:
     OAuth2Token:
       type: http

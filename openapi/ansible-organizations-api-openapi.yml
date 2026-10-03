@@ -92,41 +92,7 @@ paths:
         '204':
           description: Deleted.
 components:
-  schemas:
-    Organization:
-      type: object
-      required:
-      - name
-      properties:
-        name:
-          type: string
-        description:
-          type: string
-        max_hosts:
-          type: integer
-    ListResponse:
-      type: object
-      properties:
-        count:
-          type: integer
-        next:
-          type: string
-          nullable: true
-        previous:
-          type: string
-          nullable: true
-        results:
-          type: array
-          items:
-            type: object
-            additionalProperties: true
   parameters:
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: integer
     Page:
       name: page
       in: query
@@ -147,6 +113,12 @@ components:
         minimum: 1
         maximum: 200
         default: 25
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
   responses:
     ListResponse:
       description: A paginated list response.
@@ -154,6 +126,34 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ListResponse'
+  schemas:
+    ListResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+        next:
+          type: string
+          nullable: true
+        previous:
+          type: string
+          nullable: true
+        results:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+    Organization:
+      type: object
+      required:
+      - name
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        max_hosts:
+          type: integer
   securitySchemes:
     OAuth2Token:
       type: http

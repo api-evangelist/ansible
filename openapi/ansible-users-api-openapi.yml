@@ -69,6 +69,13 @@ paths:
         '201':
           description: Created.
 components:
+  responses:
+    ListResponse:
+      description: A paginated list response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ListResponse'
   parameters:
     PageSize:
       name: page_size
@@ -102,13 +109,6 @@ components:
           items:
             type: object
             additionalProperties: true
-  responses:
-    ListResponse:
-      description: A paginated list response.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ListResponse'
   securitySchemes:
     OAuth2Token:
       type: http
