@@ -1,0 +1,64 @@
+slug: ansible
+provider: Ansible
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 5
+edges:
+- tag: Job Templates
+  spec_file: ansible-job-templates-api-openapi.yml
+  capability_id: BC-600.40
+  capability_id_l1: BC-600
+  capability_name: IT Operations Management
+  confidence: 0.75
+  evidence: POST /job_templates/{id}/launch/ launchJobTemplate Launch a job template
+  reason: Defining and launching automation job templates is day-to-day IT operations automation, matching
+    'Day-to-day IT operations, monitoring, automation'.
+- tag: Jobs
+  spec_file: ansible-jobs-api-openapi.yml
+  capability_id: BC-600.40
+  capability_id_l1: BC-600
+  capability_name: IT Operations Management
+  confidence: 0.75
+  evidence: POST /jobs/{id}/cancel/ cancelJob Cancel a job; GET /jobs/{id}/stdout/ getJobStdout Get job
+    stdout
+  reason: Execution, cancellation and output inspection of configuration-management/automation runs is
+    IT operations automation.
+- tag: Workflow Job Templates
+  spec_file: ansible-workflow-job-templates-api-openapi.yml
+  capability_id: BC-600.40
+  capability_id_l1: BC-600
+  capability_name: IT Operations Management
+  confidence: 0.75
+  evidence: POST /workflow_job_templates/{id}/launch/ launchWorkflowJobTemplate 'Launch a workflow job
+    template' — REST API for Ansible Automation Controller ... 'the enterprise-grade automation engine'
+  reason: Ansible Automation Controller workflow job templates orchestrate IT automation runs (configuration
+    management, provisioning). This is day-to-day IT operations automation, best mapped to IT Operations
+    Management.
+- tag: Workflow Jobs
+  spec_file: ansible-workflow-jobs-api-openapi.yml
+  capability_id: BC-600.40
+  capability_id_l1: BC-600
+  capability_name: IT Operations Management
+  confidence: 0.72
+  evidence: GET /workflow_jobs/ listWorkflowJobs 'List workflow jobs' — 'the launching and inspection
+    of jobs'
+  reason: Listing executed automation jobs in the IT automation engine is IT operations monitoring/automation,
+    not a business process management capability.
+- tag: Inventories
+  spec_file: ansible-inventories-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: 'GET /inventories/ listInventories List inventories ... schemas: Inventory'
+  reason: 'Homograph check: an Ansible ''inventory'' is a collection of managed hosts/infrastructure,
+    not stock. Maps to IT infrastructure estate management, not BC-530.'
