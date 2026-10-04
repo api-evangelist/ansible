@@ -95,13 +95,6 @@ paths:
         '201':
           description: Job launched. Returns the created job.
 components:
-  responses:
-    ListResponse:
-      description: A paginated list response.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ListResponse'
   schemas:
     ListResponse:
       type: object
@@ -168,6 +161,13 @@ components:
       required: true
       schema:
         type: integer
+  responses:
+    ListResponse:
+      description: A paginated list response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ListResponse'
   securitySchemes:
     OAuth2Token:
       type: http

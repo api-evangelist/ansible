@@ -98,13 +98,6 @@ paths:
           description: Job stdout in the requested format.
 components:
   parameters:
-    Page:
-      name: page
-      in: query
-      schema:
-        type: integer
-        minimum: 1
-        default: 1
     PageSize:
       name: page_size
       in: query
@@ -119,6 +112,13 @@ components:
       required: true
       schema:
         type: integer
+    Page:
+      name: page
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
   responses:
     ListResponse:
       description: A paginated list response.
