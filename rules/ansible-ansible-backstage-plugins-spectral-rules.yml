@@ -1,0 +1,25 @@
+# harvested from https://github.com/ansible/ansible-backstage-plugins/blob/ac1d3fc3500137b6a88fcd43eaa53c6b1363407d/api/.spectral.yaml on 2026-10-09 — a Spectral ruleset published in the provider's own GitHub repository (ansible/ansible-backstage-plugins); found by GitHub code search, fetched verbatim
+x-method: harvested
+x-stamped: 2026-10-09
+x-source-url: https://github.com/ansible/ansible-backstage-plugins/blob/ac1d3fc3500137b6a88fcd43eaa53c6b1363407d/api/.spectral.yaml
+extends:
+  - spectral:oas
+
+rules:
+  # Require descriptions on all operations
+  operation-description: error
+
+  # Require operationId on all operations
+  operation-operationId: error
+
+  # Require tags on all operations
+  operation-tags: error
+
+  # Require descriptions on tags
+  openapi-tags: error
+
+  # Allow info.contact to be empty (not applicable for internal API)
+  contact-properties: off
+
+  # Allow servers to use relative URLs
+  oas3-server-trailing-slash: warn

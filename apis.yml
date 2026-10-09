@@ -447,3 +447,6 @@ common:
 - name: MCP Server
   url: https://github.com/ansible/aap-mcp-server
   type: MCPServer
+
+- type: SpectralRules
+  url: https://github.com/ansible/ansible-backstage-plugins/blob/ac1d3fc3500137b6a88fcd43eaa53c6b1363407d/api/.spectral.yaml
