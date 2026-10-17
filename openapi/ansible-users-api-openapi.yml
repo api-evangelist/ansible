@@ -69,23 +69,6 @@ paths:
         '201':
           description: Created.
 components:
-  schemas:
-    ListResponse:
-      type: object
-      properties:
-        count:
-          type: integer
-        next:
-          type: string
-          nullable: true
-        previous:
-          type: string
-          nullable: true
-        results:
-          type: array
-          items:
-            type: object
-            additionalProperties: true
   parameters:
     Page:
       name: page
@@ -109,6 +92,23 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ListResponse'
+  schemas:
+    ListResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+        next:
+          type: string
+          nullable: true
+        previous:
+          type: string
+          nullable: true
+        results:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
   securitySchemes:
     OAuth2Token:
       type: http

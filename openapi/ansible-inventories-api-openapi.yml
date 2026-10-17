@@ -73,22 +73,6 @@ paths:
           description: Deleted.
 components:
   schemas:
-    ListResponse:
-      type: object
-      properties:
-        count:
-          type: integer
-        next:
-          type: string
-          nullable: true
-        previous:
-          type: string
-          nullable: true
-        results:
-          type: array
-          items:
-            type: object
-            additionalProperties: true
     Inventory:
       type: object
       required:
@@ -108,13 +92,22 @@ components:
           - smart
         variables:
           type: string
-  parameters:
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: integer
+    ListResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+        next:
+          type: string
+          nullable: true
+        previous:
+          type: string
+          nullable: true
+        results:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
   responses:
     ListResponse:
       description: A paginated list response.
@@ -122,6 +115,13 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ListResponse'
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
   securitySchemes:
     OAuth2Token:
       type: http
