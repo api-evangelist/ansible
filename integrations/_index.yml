@@ -142,3 +142,3691 @@
     detected: '2026-10-22'
   status: not-a-workflow
   arazzo: null
+- slug: ansible-1password
+  label: 1Password
+  partner: 1password
+  partner_name: 1Password
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/onepassword/connect/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: onepassword
+    namespaces:
+    - onepassword
+    source_orgs:
+    - 1password
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/1Password/ansible-onepasswordconnect-collection
+    newest_update: '2026-05-04'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-a10-networks
+  label: A10 Networks
+  partner: a10-networks
+  partner_name: A10 Networks
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/a10/acos_axapi/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: a10
+    namespaces:
+    - a10
+    source_orgs:
+    - a10networks
+    matched_domain: a10networks.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/a10networks/a10-acos-axapi
+    - https://github.com/a10networks/a10-acos-cli
+    newest_update: '2025-12-19'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-akeyless
+  label: Akeyless
+  partner: akeyless
+  partner_name: Akeyless
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/akeyless/secrets_management/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: akeyless
+    namespaces:
+    - akeyless
+    source_orgs:
+    - akeylesslabs
+    matched_domain: akeyless.io
+    matched_by: domain
+    source_repos:
+    - https://github.com/akeylesslabs/ansible_collections
+    newest_update: '2026-05-24'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-appdynamics
+  label: AppDynamics
+  partner: appdynamics
+  partner_name: AppDynamics
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/appdynamics/agents/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: appdynamics, iogbole
+    namespaces:
+    - appdynamics
+    - iogbole
+    source_orgs:
+    - appdynamics
+    matched_domain: appdynamics.com
+    matched_by: github-org-pointer
+    source_repos:
+    - https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/agent-management/standalone-host-platforms/ansible
+    - https://github.com/Appdynamics/appdynamics-ansible
+    newest_update: '2026-09-25'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-arista-networks
+  label: Arista Networks
+  partner: arista-networks
+  partner_name: Arista Networks
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/arista/cvp/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: arista, titom74
+    namespaces:
+    - arista
+    - titom74
+    source_orgs:
+    - aristanetworks
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/aristanetworks/ansible-avd
+    - https://github.com/aristanetworks/ansible-cvp
+    - https://github.com/aristanetworks/avd
+    newest_update: '2026-10-09'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-arrcus
+  label: Arrcus
+  partner: arrcus
+  partner_name: Arrcus
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/arrcus/arcos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: arrcus
+    namespaces:
+    - arrcus
+    source_orgs: []
+    matched_domain: arrcus.com
+    matched_by: domain
+    source_repos:
+    - Not Public
+    newest_update: '2025-02-20'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-beyondtrust
+  label: BeyondTrust
+  partner: beyondtrust
+  partner_name: BeyondTrust
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/beyondtrust/secrets_safe/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: beyondtrust
+    namespaces:
+    - beyondtrust
+    source_orgs:
+    - beyondtrust
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/BeyondTrust/password-safe-integration-ansible
+    - https://github.com/BeyondTrust/secrets-safe-integration-ansible
+    newest_update: '2026-09-04'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-bigpanda
+  label: BigPanda
+  partner: bigpanda
+  partner_name: BigPanda
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/bigpanda/incident/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: bigpanda
+    namespaces:
+    - bigpanda
+    source_orgs:
+    - bigpandaio
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/bigpandaio/bigpanda-ansible
+    newest_update: '2026-06-15'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-bitwarden
+  label: Bitwarden
+  partner: bitwarden
+  partner_name: Bitwarden
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/bitwarden/secrets/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: bitwarden
+    namespaces:
+    - bitwarden
+    source_orgs:
+    - bitwarden
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/bitwarden/sm-ansible
+    newest_update: '2026-07-09'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-broadcom
+  label: Broadcom
+  partner: broadcom
+  partner_name: Broadcom
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/broadcom/zowe_core/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: broadcom
+    namespaces:
+    - broadcom
+    source_orgs:
+    - broadcommfd
+    matched_domain: broadcom.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/BroadcomMFD/broadcom-ansible-collections
+    newest_update: '2026-10-02'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-brocade
+  label: Brocade
+  partner: brocade
+  partner_name: Brocade
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/brocade/fos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: brocade, daniel_chung_broadcom
+    namespaces:
+    - brocade
+    - daniel_chung_broadcom
+    source_orgs:
+    - brocade
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/brocade/ansible
+    newest_update: '2026-04-30'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-ceph
+  label: Ceph
+  partner: ceph
+  partner_name: Ceph
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ceph/automation/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: ceph, guits
+    namespaces:
+    - ceph
+    - guits
+    source_orgs:
+    - ceph
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - http://github.com/ceph/cephadm-ansible
+    - https://github.com/ceph/ceph.automation
+    newest_update: '2026-06-18'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-check-point
+  label: Check Point
+  partner: checkpoint
+  partner_name: Check Point
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/check_point/mgmt/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: check_point
+    namespaces:
+    - check_point
+    source_orgs:
+    - checkpointsw
+    matched_domain: checkpoint.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/CheckPointSW/CheckPointAnsibleGAIACollection
+    - https://github.com/CheckPointSW/CheckPointAnsibleMgmtCollection
+    newest_update: '2026-09-02'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-ciena
+  label: Ciena
+  partner: ciena
+  partner_name: Ciena
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ciena/saos10/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: ciena
+    namespaces:
+    - ciena
+    source_orgs:
+    - ciena
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/ciena/ciena.mcp
+    - https://github.com/ciena/ciena.mdso
+    - https://github.com/ciena/ciena.saos10
+    - https://github.com/ciena/ciena.saos6
+    - https://github.com/ciena/ciena.saos8
+    - https://github.com/ciena/ciena.waveserver5
+    - https://github.com/ciena/ciena.waveserverai
+    newest_update: '2026-10-07'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cisco
+  label: Cisco
+  partner: cisco
+  partner_name: Cisco
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cisco/aci/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: appdynamics, cisco, mikewiebe, pavankrish123, v_zhuravlev, xinyuezhao18
+    namespaces:
+    - appdynamics
+    - cisco
+    - mikewiebe
+    - pavankrish123
+    - v_zhuravlev
+    - xinyuezhao18
+    source_orgs:
+    - cisco-open
+    - ciscodevnet
+    - netascode
+    matched_domain: cisco.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - http://example.com/repository
+    - https://github.com/CiscoDevNet/FMCAnsible
+    - https://github.com/CiscoDevNet/ansible-aci
+    - https://github.com/CiscoDevNet/ansible-cisco-cdo
+    - https://github.com/CiscoDevNet/ansible-cml
+    - https://github.com/CiscoDevNet/ansible-dcnm
+    - https://github.com/CiscoDevNet/ansible-gnmi
+    - https://github.com/CiscoDevNet/ansible-mso
+    - https://github.com/CiscoDevNet/ansible-nae
+    - https://github.com/CiscoDevNet/ansible-nd
+    newest_update: '2026-10-12'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cisco-catalyst-center
+  label: Cisco Catalyst Center
+  partner: cisco-catalyst-center
+  partner_name: Cisco Catalyst Center
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cisco/dnac/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: cisco, racampos
+    namespaces:
+    - cisco
+    - racampos
+    source_orgs:
+    - cisco-en-programmability
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/cisco-en-programmability/catalystcenter-ansible
+    - https://github.com/cisco-en-programmability/dnacenter-ansible
+    newest_update: '2026-10-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cisco-identity-services-engine
+  label: Cisco Identity Services Engine
+  partner: cisco-ise
+  partner_name: Cisco Identity Services Engine
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cisco/ise/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: cisco
+    namespaces:
+    - cisco
+    source_orgs:
+    - ciscoise
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/CiscoISE/ansible-ise
+    newest_update: '2026-10-14'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cisco-meraki
+  label: Cisco Meraki
+  partner: cisco-meraki
+  partner_name: Cisco Meraki
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cisco/meraki/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: cisco
+    namespaces:
+    - cisco
+    source_orgs:
+    - meraki
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/meraki/dashboard-api-ansible
+    newest_update: '2026-09-03'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-citrix
+  label: Citrix
+  partner: citrix
+  partner_name: Citrix
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/citrix/adc/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: citrix
+    namespaces:
+    - citrix
+    source_orgs:
+    - citrix
+    matched_domain: citrix.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/citrix/citrix-adc-ansible-modules
+    newest_update: '2024-02-23'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-citrix-netscaler
+  label: Citrix NetScaler
+  partner: citrix-netscaler
+  partner_name: Citrix NetScaler
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/netscaler/adc/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: netscaler
+    namespaces:
+    - netscaler
+    source_orgs:
+    - netscaler
+    matched_domain: netscaler.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/netscaler/ansible-collection-netscaleradc
+    - https://github.com/netscaler/ansible-collection-netscalerconsole
+    newest_update: '2026-07-15'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cloudera
+  label: Cloudera
+  partner: cloudera
+  partner_name: Cloudera
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cloudera/cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: cloudera
+    namespaces:
+    - cloudera
+    source_orgs:
+    - cloudera-labs
+    matched_domain: cloudera.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/cloudera-labs/cloudera.cloud
+    - https://github.com/cloudera-labs/cloudera.cluster
+    - https://github.com/cloudera-labs/cloudera.exe
+    - https://github.com/cloudera-labs/cloudera.services
+    newest_update: '2026-07-31'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cohesity
+  label: Cohesity
+  partner: cohesity
+  partner_name: Cohesity
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cohesity/dataprotect/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: cohesity, naveena_maplelabs
+    namespaces:
+    - cohesity
+    - naveena_maplelabs
+    source_orgs:
+    - cohesity
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/cohesity/ansible-collection
+    - https://github.com/cohesity/cohesity-ansible-role
+    newest_update: '2026-07-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-commscope-holding
+  label: CommScope Holding
+  partner: commscope-holding
+  partner_name: CommScope Holding
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/commscope/icx/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: commscope
+    namespaces:
+    - commscope
+    source_orgs:
+    - commscope-ruckus
+    matched_domain: commscope.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/commscope-ruckus/commscope.icx
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-commvault
+  label: Commvault
+  partner: commvault
+  partner_name: Commvault
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/commvault/ansible/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: commvault
+    namespaces:
+    - commvault
+    source_orgs:
+    - commvault
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/Commvault/ansiblev2
+    newest_update: '2026-02-16'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-confluent
+  label: Confluent
+  partner: confluent
+  partner_name: Confluent
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/confluent/platform/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: confluent
+    namespaces:
+    - confluent
+    source_orgs:
+    - confluentinc
+    matched_domain: confluent.io
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/confluentinc/ansible-collection-confluent-cloud
+    - https://github.com/confluentinc/cp-ansible
+    newest_update: '2026-09-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-crowdstrike
+  label: CrowdStrike
+  partner: crowdstrike
+  partner_name: CrowdStrike
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/crowdstrike/falcon/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: crowdstrike
+    namespaces:
+    - crowdstrike
+    source_orgs:
+    - crowdstrike
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/CrowdStrike/ansible_collection_crowdstrike
+    newest_update: '2026-10-08'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-ctera
+  label: CTERA
+  partner: ctera
+  partner_name: CTERA
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ctera/ctera/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: ctera
+    namespaces:
+    - ctera
+    source_orgs:
+    - ctera
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/ctera/ctera-ansible-collections
+    newest_update: '2026-09-16'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-cyberark
+  label: CyberArk
+  partner: cyberark
+  partner_name: CyberArk
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/cyberark/pas/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: cyberark, cyberarkfrlab
+    namespaces:
+    - cyberark
+    - cyberarkfrlab
+    source_orgs:
+    - cyberark
+    - cyberark-fr-lab
+    matched_domain: cyberark.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/cyberark-fr-lab/cyberarklabfr.dpa
+    - https://github.com/cyberark/ansible-conjur-collection
+    - https://github.com/cyberark/ansible-isp-collection
+    - https://github.com/cyberark/ansible-security-automation-collection
+    newest_update: '2026-08-05'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-datadog
+  label: Datadog
+  partner: datadog
+  partner_name: Datadog
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/datadog/dd/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: datadog
+    namespaces:
+    - datadog
+    source_orgs: []
+    matched_domain: datadoghq.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/ansible-collections/Datadog
+    newest_update: '2026-02-11'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-dataiku
+  label: Dataiku
+  partner: dataiku
+  partner_name: Dataiku
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/dataiku/dss/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: dataiku
+    namespaces:
+    - dataiku
+    source_orgs:
+    - dataiku
+    matched_domain: dataiku.com
+    matched_by: domain
+    source_repos:
+    - http://dataiku/dataiku-ansible-collection
+    newest_update: '2026-05-28'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-delinea
+  label: Delinea
+  partner: delinea
+  partner_name: Delinea
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/delinea/ss/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: delinea
+    namespaces:
+    - delinea
+    source_orgs:
+    - delineaxpm
+    matched_domain: delinea.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/DelineaXPM/ansible-core-collection
+    - https://github.com/DelineaXPM/ansible-pas-collection
+    - https://github.com/DelineaXPM/ansible-ss-collection
+    newest_update: '2025-12-19'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-dell-technologies
+  label: Dell Technologies
+  partner: dell-technologies
+  partner_name: Dell Technologies
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/dellemc/openmanage/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: dellemc
+    namespaces:
+    - dellemc
+    source_orgs:
+    - dell
+    matched_domain: dell.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/dell/ansible-acp-azure
+    - https://github.com/dell/ansible-isilon/tree/1.1.0
+    - https://github.com/dell/ansible-objectscale/tree/main
+    - https://github.com/dell/ansible-powerflex
+    - https://github.com/dell/ansible-powermax
+    - https://github.com/dell/ansible-powerscale/tree/main
+    - https://github.com/dell/ansible-powerstore/tree/main
+    - https://github.com/dell/ansible-unity/tree/2.1.0
+    - https://github.com/dell/ansible-vplex/tree/1.3.0
+    - https://github.com/dell/ansible-vxrail
+    newest_update: '2026-10-07'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-digital-ocean
+  label: Digital Ocean
+  partner: digital-ocean
+  partner_name: Digital Ocean
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/digitalocean/cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: digitalocean
+    namespaces:
+    - digitalocean
+    source_orgs:
+    - digitalocean
+    matched_domain: digitalocean.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/digitalocean/ansible-collection
+    newest_update: '2026-01-20'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-drivenets
+  label: DriveNets
+  partner: drivenets
+  partner_name: DriveNets
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/drivenets/dnos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: drivenets
+    namespaces:
+    - drivenets
+    source_orgs:
+    - drivenets
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/drivenets/ansible-collection-dnos
+    newest_update: '2026-01-14'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-dynatrace
+  label: Dynatrace
+  partner: dynatrace
+  partner_name: Dynatrace
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/dynatrace/oneagent/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: dynatrace, dynatrace_innovationlab
+    namespaces:
+    - dynatrace
+    - dynatrace_innovationlab
+    source_orgs:
+    - dynatrace
+    - dynatrace-innovationlab
+    - redhatecosystem
+    matched_domain: dynatrace.com
+    matched_by: github-org-pointer
+    source_repos:
+    - http://example.com/repository
+    - https://github.com/Dynatrace/Dynatrace-EventDrivenAnsible
+    - https://github.com/Dynatrace/Dynatrace-OneAgent-Ansible
+    - https://github.com/RedHatEcosystem/Dynatrace
+    - https://github.com/dynatrace-innovationlab/ansible-collection
+    newest_update: '2026-08-28'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - dynatrace.oneagent_deploy
+    all_deprecated: false
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-edb
+  label: EDB
+  partner: enterprisedb
+  partner_name: EDB
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/edb_devops/edb_postgres/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: edb, edb_devops
+    namespaces:
+    - edb
+    - edb_devops
+    source_orgs:
+    - enterprisedb
+    matched_domain: enterprisedb.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/EnterpriseDB/edb-ansible
+    - https://github.com/EnterpriseDB/edb.epas_postgresql
+    newest_update: '2026-07-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-equinix
+  label: Equinix
+  partner: equinix
+  partner_name: Equinix
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/equinix/metal/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: equinix
+    namespaces:
+    - equinix
+    source_orgs:
+    - equinix
+    matched_domain: equinix.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/equinix/ansible-collection-equinix
+    - https://github.com/equinix/ansible-collection-metal
+    newest_update: '2024-10-30'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - equinix.metal
+    all_deprecated: false
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-extreme-networks
+  label: Extreme Networks
+  partner: extreme-networks
+  partner_name: Extreme Networks
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/extreme/exos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: extreme, extreme_community
+    namespaces:
+    - extreme
+    - extreme_community
+    source_orgs:
+    - extremenetworks
+    matched_domain: extremenetworks.com
+    matched_by: domain
+    source_repos:
+    - git@github.com:extremenetworks/ansible_collections.extreme.exos.git
+    - git@github.com:extremenetworks/ansible_collections.extreme.nos.git
+    - git@github.com:extremenetworks/ansible_collections.extreme.slxos.git
+    - git@github.com:extremenetworks/ansible_collections.extreme.voss.git
+    - https://github.com/extremenetworks/ansible_collections.extreme.fe
+    - https://github.com/extremenetworks/ansible_collections.extreme_community.xiqse
+    newest_update: '2026-08-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - extreme.voss
+    all_deprecated: false
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-fluence
+  label: Fluence
+  partner: fluence
+  partner_name: Fluence
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/fluencelabs/provider/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: fluencelabs
+    namespaces:
+    - fluencelabs
+    source_orgs:
+    - fluencelabs
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/fluencelabs/ansible/
+    newest_update: '2024-12-30'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-forcepoint
+  label: Forcepoint
+  partner: forcepoint
+  partner_name: Forcepoint
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/forcepoint/fp_ngfw_smc_ansible/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: forcepoint
+    namespaces:
+    - forcepoint
+    source_orgs:
+    - forcepoint
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/Forcepoint/fp_ngfw_smc_ansible
+    newest_update: '2026-02-19'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-forgejo
+  label: Forgejo
+  partner: forgejo
+  partner_name: Forgejo
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/forgejo/forgejo/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: forgejo
+    namespaces:
+    - forgejo
+    source_orgs: []
+    matched_domain: forgejo.org
+    matched_by: domain
+    source_repos:
+    - https://codeberg.org/forgejo-contrib/ansible
+    newest_update: '2026-08-01'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-fortinet
+  label: Fortinet
+  partner: fortinet
+  partner_name: Fortinet
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/fortinet/fortios/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: dux_fortinet, fortinet, fortinetps, lix_fortinet
+    namespaces:
+    - dux_fortinet
+    - fortinet
+    - fortinetps
+    - lix_fortinet
+    source_orgs:
+    - fortinet-ansible-dev
+    - fortinetps
+    matched_domain: fortinet.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fmgdevice-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortiadc-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortianalyzer-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortiflexvm-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortisase-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortiswitch-collection
+    - https://github.com/fortinet-ansible-dev/ansible-galaxy-fortiweb-collection
+    - https://github.com/fortinetps/ansible-galaxy-fortinet-console-collection/tree/galaxy/0.2.2
+    newest_update: '2026-10-10'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - dux_fortinet.fortianalyzer_dev
+    - dux_fortinet.fortiflexvm_dev
+    all_deprecated: false
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-google
+  label: Google
+  partner: google
+  partner_name: Google
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/google/cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: google
+    namespaces:
+    - google
+    source_orgs: []
+    matched_domain: google.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - http://github.com/ansible/ansible_collections_google
+    - https://github.com/ansible-collections/google.cloud
+    newest_update: '2026-10-01'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-grafana
+  label: Grafana
+  partner: grafana-com
+  partner_name: Grafana
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/grafana/grafana/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: grafana, indigo423
+    namespaces:
+    - grafana
+    - indigo423
+    source_orgs:
+    - grafana
+    matched_domain: grafana.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/grafana/grafana-ansible-collection
+    newest_update: '2026-10-19'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-graphiant
+  label: Graphiant
+  partner: graphiant
+  partner_name: Graphiant
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/graphiant/naas/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: graphiant
+    namespaces:
+    - graphiant
+    source_orgs:
+    - graphiant-inc
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/Graphiant-Inc/graphiant-playbooks
+    newest_update: '2026-10-01'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-gremlin
+  label: Gremlin
+  partner: gremlin
+  partner_name: Gremlin
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/gremlin/ansible_gremlin/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: gremlin
+    namespaces:
+    - gremlin
+    source_orgs:
+    - gremlin
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/gremlin/ansible-gremlin
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-hewlett-packard-enterprise
+  label: Hewlett Packard Enterprise
+  partner: hpe
+  partner_name: Hewlett Packard Enterprise
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/hpe/ilo/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: hpe
+    namespaces:
+    - hpe
+    source_orgs:
+    - hewlettpackard
+    matched_domain: hpe.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/HewlettPackard/iLO-ansible-collection
+    - https://github.com/HewlettPackard/monkeyble
+    - https://github.com/HewlettPackard/oneview-ansible-collection
+    newest_update: '2026-08-13'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-ibm
+  label: IBM
+  partner: ibm
+  partner_name: IBM
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ibm/power_aix/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: acch, daiki_shimizu, ibm, ibm_zoscb, mhobbs_ibm, ryan_gordon1, sahityajain123
+    namespaces:
+    - acch
+    - daiki_shimizu
+    - ibm
+    - ibm_zoscb
+    - mhobbs_ibm
+    - ryan_gordon1
+    - sahityajain123
+    source_orgs:
+    - ibm
+    - ibm-blockchain
+    - ibm-security
+    matched_domain: ibm.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/IBM-Blockchain/ansible-collection
+    - https://github.com/IBM-Security/isam-ansible-collection
+    - https://github.com/IBM/ansible-for-i-sap
+    - https://github.com/IBM/ansible-for-i/tree/devel
+    - https://github.com/IBM/ansible-power-aix
+    - https://github.com/IBM/ansible-power-aix-oracle
+    - https://github.com/IBM/ansible-power-aix-oracle-dba
+    - https://github.com/IBM/ansible-power-aix-sap
+    - https://github.com/IBM/ansible-power-hmc
+    - https://github.com/IBM/ansible-power-linux-sap
+    newest_update: '2026-10-02'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - ibm.zos_package_manager
+    - ibm.blockchain_platform
+    - ibm.ibm_zos_zosmf
+    - ibm.zos_cics_operator
+    - ibm.zos_ims_operator
+    all_deprecated: false
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-ibm-cloud-kubernetes
+  label: IBM Cloud Kubernetes
+  partner: ibm-cloud-kubernetes
+  partner_name: IBM Cloud Kubernetes
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ibm/cloudcollection/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: anil_cm, ibm, ibmcloud
+    namespaces:
+    - anil_cm
+    - ibm
+    - ibmcloud
+    source_orgs:
+    - ibm-cloud
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/IBM-Cloud/ansible-collection-ibm
+    newest_update: '2025-01-27'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - ibm.cloudcollection
+    all_deprecated: false
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-ibm-mq
+  label: IBM MQ
+  partner: ibm-mq
+  partner_name: IBM MQ
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ibm_messaging/ibmmq/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: ibm_messaging
+    namespaces:
+    - ibm_messaging
+    source_orgs:
+    - ibm-messaging
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/ibm-messaging/mq-ansible
+    newest_update: '2026-07-16'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-illumio
+  label: Illumio
+  partner: illumio
+  partner_name: Illumio
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/illumio/core/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: illumio
+    namespaces:
+    - illumio
+    source_orgs:
+    - illumio
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/illumio/illumio.core
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-infinera
+  label: Infinera
+  partner: infinera
+  partner_name: Infinera
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ipbhat/iqnos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: ipbhat
+    namespaces:
+    - ipbhat
+    source_orgs:
+    - infinera
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/infinera/ansible_collection.infinera.iqnos
+    - https://github.com/infinera/iqnos-networkautomation
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-infinidat
+  label: Infinidat
+  partner: infinidat
+  partner_name: Infinidat
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/infinidat/infinibox/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: infinidat
+    namespaces:
+    - infinidat
+    source_orgs:
+    - infinidat
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/infinidat/ansible-infinidat-collection
+    newest_update: '2026-08-14'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-infisical
+  label: Infisical
+  partner: infisical
+  partner_name: Infisical
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/infisical/vault/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: infisical
+    namespaces:
+    - infisical
+    source_orgs:
+    - infisical
+    matched_domain: infisical.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/Infisical/ansible-collection
+    - https://github.com/infisical/infisical_core_ha_deployment
+    newest_update: '2026-08-28'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-infoblox
+  label: Infoblox
+  partner: infoblox
+  partner_name: Infoblox
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/infoblox/nios_modules/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: infoblox
+    namespaces:
+    - infoblox
+    source_orgs:
+    - infobloxopen
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/infobloxopen/infoblox-ansible
+    - https://github.com/infobloxopen/universal-ddi-ansible
+    newest_update: '2026-07-17'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-instana
+  label: Instana
+  partner: instana
+  partner_name: Instana
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/ibm/instana/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: ibm
+    namespaces:
+    - ibm
+    source_orgs:
+    - instana
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/instana/ibm-instana-ansible
+    newest_update: '2024-04-15'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-jfrog
+  label: JFrog
+  partner: jfrog
+  partner_name: JFrog
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/jfrog/platform/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: jfrog
+    namespaces:
+    - jfrog
+    source_orgs:
+    - jfrog
+    matched_domain: jfrog.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/jfrog/JFrog-Cloud-Installers/
+    - https://github.com/jfrog/JFrog-Cloud-Installers/tree/master/Ansible
+    newest_update: '2026-09-11'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-juniper-networks
+  label: Juniper Networks
+  partner: juniper
+  partner_name: Juniper Networks
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/junipernetworks/junos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: juniper, junipernetworks
+    namespaces:
+    - juniper
+    - junipernetworks
+    source_orgs:
+    - juniper
+    matched_domain: juniper.net
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/Juniper/ansible-junos-stdlib
+    - https://github.com/Juniper/apstra-ansible-collection
+    - https://github.com/Juniper/k8s.eda
+    - https://github.com/Juniper/space-ansible-collection
+    newest_update: '2026-10-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-k3s
+  label: K3s
+  partner: k3s
+  partner_name: K3s
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/vrsarin/k3s_ansible/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: vrsarin
+    namespaces:
+    - vrsarin
+    source_orgs:
+    - k3s-io
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/k3s-io/k3s-ansible
+    newest_update: '2024-04-04'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-keeper-security
+  label: Keeper Security
+  partner: keeper-security
+  partner_name: Keeper Security
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/keepersecurity/keeper_secrets_manager/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: keepersecurity
+    namespaces:
+    - keepersecurity
+    source_orgs:
+    - keeper-security
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/Keeper-Security/secrets-manager
+    newest_update: '2026-10-22'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-kentik
+  label: Kentik
+  partner: kentik
+  partner_name: Kentik
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/kentik/kentik_config/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: kentik
+    namespaces:
+    - kentik
+    source_orgs:
+    - kentik
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/kentik/ansible_eda
+    - https://github.com/kentik/kentik_ansible_collection
+    newest_update: '2026-07-16'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-keyfactor
+  label: Keyfactor
+  partner: keyfactor
+  partner_name: Keyfactor
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/jtgarner_keyfactor/ejbca/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: jtgarner_keyfactor
+    namespaces:
+    - jtgarner_keyfactor
+    source_orgs:
+    - keyfactor
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/Keyfactor/automated-ansible-documentation
+    newest_update: '2024-02-05'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-kong
+  label: Kong
+  partner: kong
+  partner_name: Kong
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/kong/kong/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: kong
+    namespaces:
+    - kong
+    source_orgs:
+    - kong
+    matched_domain: konghq.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/Kong/ansible-galaxy-role-kong
+    - https://github.com/Kong/kong-ansible-collection
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-kubevirt
+  label: KubeVirt
+  partner: kubevirt
+  partner_name: KubeVirt
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/kubevirt/core/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: kubevirt
+    namespaces:
+    - kubevirt
+    source_orgs:
+    - kubevirt
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/kubevirt/kubevirt.core
+    newest_update: '2026-06-10'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-launchdarkly
+  label: LaunchDarkly
+  partner: launchdarkly
+  partner_name: LaunchDarkly
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/launchdarkly_labs/collection/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: launchdarkly_labs
+    namespaces:
+    - launchdarkly_labs
+    source_orgs:
+    - launchdarkly-labs
+    matched_domain: launchdarkly.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/launchdarkly-labs/ansible-launchdarkly-collection
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-lido
+  label: Lido
+  partner: lido
+  partner_name: Lido
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/lidofinance/server/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: lidofinance
+    namespaces:
+    - lidofinance
+    source_orgs:
+    - lidofinance
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/lidofinance/ansible-collection-server
+    newest_update: '2026-08-31'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-linode
+  label: Linode
+  partner: linode
+  partner_name: Linode
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/linode/cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: linode, soycapitan
+    namespaces:
+    - linode
+    - soycapitan
+    source_orgs:
+    - linode
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/linode/ansible_linode
+    newest_update: '2026-10-12'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-logicmonitor
+  label: LogicMonitor
+  partner: logicmonitor
+  partner_name: LogicMonitor
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/logicmonitor/integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: logicmonitor
+    namespaces:
+    - logicmonitor
+    source_orgs:
+    - logicmonitor
+    matched_domain: logicmonitor.com
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/ansible-collections/logicmonitor
+    - https://github.com/logicmonitor/logicmonitor.edwin_ai
+    newest_update: '2026-07-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-microsoft-azure
+  label: Microsoft Azure
+  partner: microsoft-azure
+  partner_name: Microsoft Azure
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/azure/azcollection/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: azure, smile37773
+    namespaces:
+    - azure
+    - smile37773
+    source_orgs:
+    - azure
+    matched_domain: microsoft.com
+    matched_by: domain+verified
+    source_repos:
+    - https://github.com/Azure/AnsibleCollection
+    - https://github.com/ansible-collections/azure
+    newest_update: '2026-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-nagios
+  label: Nagios
+  partner: nagios
+  partner_name: Nagios
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/nagios/nagios_xi/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: nagios
+    namespaces:
+    - nagios
+    source_orgs:
+    - nagiosenterprises
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/NagiosEnterprises/automation
+    - https://github.com/NagiosEnterprises/automation/tree/master/ansible/ncpa_install_and_register
+    newest_update: '2026-10-20'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - nagios.xi_inventory
+    all_deprecated: false
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-netapp
+  label: NetApp
+  partner: netapp
+  partner_name: NetApp
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/netapp_eseries/santricity/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: netapp, netapp_eseries
+    namespaces:
+    - netapp
+    - netapp_eseries
+    source_orgs:
+    - netapp
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/NetApp/netapp.trident
+    - https://github.com/NetApp/netapp.trident_protect
+    - https://github.com/NetApp/pace
+    - https://github.com/netapp/ansible-lustre
+    - https://www.github.com/netapp/host
+    - https://www.github.com/netapp/santricity
+    newest_update: '2026-08-17'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-netbox
+  label: NetBox
+  partner: netbox
+  partner_name: NetBox
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/netbox/netbox/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: netbox, netbox_community
+    namespaces:
+    - netbox
+    - netbox_community
+    source_orgs:
+    - netbox-community
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/netbox-community/ansible_modules
+    newest_update: '2026-10-13'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-new-relic
+  label: New Relic
+  partner: new-relic
+  partner_name: New Relic
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/newrelic/newrelic_agents/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: newrelic
+    namespaces:
+    - newrelic
+    source_orgs:
+    - newrelic
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/newrelic/newrelic-agents-ansible-collection
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-nextcloud
+  label: Nextcloud
+  partner: nextcloud
+  partner_name: Nextcloud
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/nextcloud/admin/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: nextcloud
+    namespaces:
+    - nextcloud
+    source_orgs:
+    - nextcloud
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/nextcloud/ansible-collection-nextcloud-admin
+    newest_update: '2026-09-26'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-nginx-service-mesh
+  label: NGINX Service Mesh
+  partner: nginx-service-mesh
+  partner_name: NGINX Service Mesh
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/nginxinc/nginx_core/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: nginxinc
+    namespaces:
+    - nginxinc
+    source_orgs:
+    - nginxinc
+    matched_domain: nginx.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/nginxinc/ansible-collection-nginx
+    - https://github.com/nginxinc/ansible-collection-nginx_controller
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    deprecated:
+    - nginxinc.nginx_controller
+    all_deprecated: false
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-nokia
+  label: Nokia
+  partner: nokia-corp
+  partner_name: Nokia
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/nokia/sros/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: nokia
+    namespaces:
+    - nokia
+    source_orgs:
+    - nokia
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - http://github.com/nokia/ansible-collections
+    - http://github.com/nokia/ansible-networking-collections/blob/master/grpc
+    - https://github.com/nokia/srlinux-ansible-collection
+    - https://github.com/nokia/sros-ansible-collection
+    newest_update: '2026-06-24'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-nutanix
+  label: Nutanix
+  partner: nutanix
+  partner_name: Nutanix
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/nutanix/ncp/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: bootswithdefer, nutanix
+    namespaces:
+    - bootswithdefer
+    - nutanix
+    source_orgs:
+    - nutanix
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/nutanix/nutanix.ansible
+    newest_update: '2026-09-23'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-nvidia
+  label: Nvidia
+  partner: nvidia
+  partner_name: Nvidia
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/nvidia/dpu_ops/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: nvidia, yshestakov
+    namespaces:
+    - nvidia
+    - yshestakov
+    source_orgs:
+    - nvidia
+    matched_domain: nvidia.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/NVIDIA/ansible-collection-dpu-ops
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-operator-framework
+  label: Operator Framework
+  partner: operator-framework
+  partner_name: Operator Framework
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/operator_sdk/util/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: operator_sdk
+    namespaces:
+    - operator_sdk
+    source_orgs:
+    - operator-framework
+    matched_domain: operatorframework.io
+    matched_by: domain
+    source_repos:
+    - https://github.com/operator-framework/operator-sdk-ansible-util
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-opsmill
+  label: OpsMill
+  partner: opsmill
+  partner_name: OpsMill
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/opsmill/infrahub/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: opsmill
+    namespaces:
+    - opsmill
+    source_orgs:
+    - opsmill
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/opsmill/infrahub-ansible
+    newest_update: '2026-09-01'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-opsramp
+  label: OpsRamp
+  partner: opsramp
+  partner_name: OpsRamp
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/opsramp/monitoring/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: opsramp
+    namespaces:
+    - opsramp
+    source_orgs:
+    - opsramp
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/opsramp/opsramp-ansible-collection
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-oracle
+  label: Oracle
+  partner: oracle
+  partner_name: Oracle
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/oracle/oci/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: oracle
+    namespaces:
+    - oracle
+    source_orgs:
+    - oracle
+    matched_domain: oracle.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/oracle/oci-ansible-collections/
+    newest_update: '2025-05-22'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-palo-alto-networks
+  label: Palo Alto Networks
+  partner: palo-alto-networks
+  partner_name: Palo Alto Networks
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/paloaltonetworks/panos/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: nembery, paloaltonetworks, pan_community, vaishnavi_panw
+    namespaces:
+    - nembery
+    - paloaltonetworks
+    - pan_community
+    - vaishnavi_panw
+    source_orgs:
+    - paloaltonetworks
+    matched_domain: paloaltonetworks.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - http://github.com/paloaltonetworks/scm-ansible
+    - https://github.com/PaloAltoNetworks/ansible_panos_policy_orchestration
+    - https://github.com/PaloAltoNetworks/pan-os-ansible
+    - https://github.com/PaloAltoNetworks/skillet_ansible
+    newest_update: '2026-08-31'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-plakar
+  label: Plakar
+  partner: plakar
+  partner_name: Plakar
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/plakarkorp/plakar/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: plakarkorp
+    namespaces:
+    - plakarkorp
+    source_orgs:
+    - plakarkorp
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/PlakarKorp/ansible-collection-plakar
+    newest_update: '2026-09-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-prometheus
+  label: Prometheus
+  partner: prometheus-io
+  partner_name: Prometheus
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/prometheus/prometheus/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: prometheus
+    namespaces:
+    - prometheus
+    source_orgs:
+    - prometheus-community
+    matched_domain: prometheus.io
+    matched_by: domain
+    source_repos:
+    - https://github.com/prometheus-community/ansible
+    newest_update: '2026-10-07'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-redpanda
+  label: Redpanda
+  partner: redpanda
+  partner_name: Redpanda
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/redpanda/cluster/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: redpanda
+    namespaces:
+    - redpanda
+    source_orgs:
+    - redpanda-data
+    matched_domain: redpanda.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/redpanda-data/deployment-automation
+    newest_update: '2026-07-27'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-rubrik
+  label: Rubrik
+  partner: rubrik
+  partner_name: Rubrik
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/rubrikinc/cdm/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: rubrikinc
+    namespaces:
+    - rubrikinc
+    source_orgs:
+    - rubrikinc
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/rubrikinc/rubrik-modules-for-ansible
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-scale-computing
+  label: Scale Computing
+  partner: scale-computing
+  partner_name: Scale Computing
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/scale_computing/hypercore/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: scale_computing
+    namespaces:
+    - scale_computing
+    source_orgs:
+    - scalecomputing
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/ScaleComputing/HyperCoreAnsibleCollection
+    newest_update: '2025-03-17'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-scaleway
+  label: Scaleway
+  partner: scaleway
+  partner_name: Scaleway
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/scaleway/scaleway/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: scaleway
+    namespaces:
+    - scaleway
+    source_orgs:
+    - scaleway
+    matched_domain: scaleway.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/scaleway/ansible
+    newest_update: '2026-02-19'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-sensu
+  label: Sensu
+  partner: sensu
+  partner_name: Sensu
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/sensu/sensu_go/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: sensu
+    namespaces:
+    - sensu
+    source_orgs:
+    - sensu
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/sensu/sensu-go-ansible
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-manageengine-servicedesk-plus
+  label: ManageEngine ServiceDesk Plus
+  partner: servicedesk-plus
+  partner_name: ManageEngine ServiceDesk Plus
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/manageengine/sdp_cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: manageengine
+    namespaces:
+    - manageengine
+    source_orgs:
+    - manageengine
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/ManageEngine/manageengine.sdp_cloud
+    newest_update: '2026-02-19'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-servicenow
+  label: ServiceNow
+  partner: servicenow
+  partner_name: ServiceNow
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/servicenow/servicenow/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: servicenow
+    namespaces:
+    - servicenow
+    source_orgs:
+    - servicenowitom
+    matched_domain: servicenow.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/ServiceNowITOM/servicenow-ansible
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-smallstep
+  label: SmallStep
+  partner: smallstep
+  partner_name: SmallStep
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/smallstep/cli/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: smallstep
+    namespaces:
+    - smallstep
+    source_orgs:
+    - smallstep
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/smallstep/ansible-collection-agent
+    - https://github.com/smallstep/ansible-collection-cli
+    - https://github.com/smallstep/ansible-collection-sigstore
+    newest_update: '2023-11-13'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-sophos
+  label: Sophos
+  partner: sophos
+  partner_name: Sophos
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/sophos/sophos_firewall/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: sophos
+    namespaces:
+    - sophos
+    source_orgs:
+    - sophos
+    matched_domain: sophos.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/sophos/sophosfirewall-ansible
+    newest_update: '2026-08-03'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-splunk
+  label: Splunk
+  partner: splunk
+  partner_name: Splunk
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/mason_splunk/ansible_role_for_splunk/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: mason_splunk
+    namespaces:
+    - mason_splunk
+    source_orgs:
+    - splunk
+    matched_domain: splunk.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://www.github.com/splunk/ansible-role-for-splunk
+    newest_update: '2023-09-29'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-sysdig
+  label: Sysdig
+  partner: sysdig
+  partner_name: Sysdig
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/sysdig/agent/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: sysdig
+    namespaces:
+    - sysdig
+    source_orgs:
+    - sysdiglabs
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/sysdiglabs/agent-ansible-collection
+    newest_update: '2024-03-27'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-thales
+  label: Thales
+  partner: thalesgroup
+  partner_name: Thales
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/thalesgroup/ciphertrust/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: thalesgroup
+    namespaces:
+    - thalesgroup
+    source_orgs:
+    - thalesgroup
+    matched_domain: thalesgroup.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/ThalesGroup/CDSP-Orchestration-Ansible
+    newest_update: '2025-04-01'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-tulip-interfaces
+  label: Tulip Interfaces
+  partner: tulip-interfaces
+  partner_name: Tulip Interfaces
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/tulip/edge/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: tulip
+    namespaces:
+    - tulip
+    source_orgs:
+    - tulip
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/tulip/tulip-ansible-library
+    newest_update: '2026-02-17'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-upcloud
+  label: UpCloud
+  partner: upcloud
+  partner_name: UpCloud
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/upcloud/cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: upcloud
+    namespaces:
+    - upcloud
+    source_orgs:
+    - upcloudltd
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/UpCloudLtd/upcloud-ansible-collection
+    newest_update: '2026-09-07'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-vast-data
+  label: VAST Data
+  partner: vastdata
+  partner_name: VAST Data
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/vastdata/vms/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: vastdata
+    namespaces:
+    - vastdata
+    source_orgs:
+    - vast-data
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/vast-data/vast-ansible
+    newest_update: '2026-09-23'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-venafi
+  label: Venafi
+  partner: venafi
+  partner_name: Venafi
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/venafi/machine_identity/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: venafi
+    namespaces:
+    - venafi
+    source_orgs:
+    - venafi
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/Venafi/ansible-collection-venafi
+    newest_update: '2026-09-30'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-victoriametrics
+  label: VictoriaMetrics
+  partner: victoriametrics
+  partner_name: VictoriaMetrics
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/victoriametrics/cluster/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: victoriametrics
+    namespaces:
+    - victoriametrics
+    source_orgs:
+    - victoriametrics
+    matched_domain: victoriametrics.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/VictoriaMetrics/ansible-playbooks
+    newest_update: '2026-10-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-vmware
+  label: VMware
+  partner: vmware
+  partner_name: VMware
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/vmware/alb/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: amolopcito, damhau, rohan_sss1, vmware
+    namespaces:
+    - amolopcito
+    - damhau
+    - rohan_sss1
+    - vmware
+    source_orgs:
+    - vmware
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/vmware/ansible-collection-alb
+    - https://github.com/vmware/ansible-for-nsxt
+    newest_update: '2026-10-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-vultr
+  label: Vultr
+  partner: vultr
+  partner_name: Vultr
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/vultr/cloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: vultr
+    namespaces:
+    - vultr
+    source_orgs:
+    - vultr
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/vultr/ansible-collection-vultr
+    newest_update: '2026-06-30'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-zabbix
+  label: Zabbix
+  partner: zabbix
+  partner_name: Zabbix
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/zabbix/zabbix/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: zabbix
+    namespaces:
+    - zabbix
+    source_orgs:
+    - zabbix
+    matched_domain: zabbix.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/zabbix/ansible-collection.git
+    newest_update: '2026-07-17'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-zscaler
+  label: Zscaler
+  partner: zscaler
+  partner_name: Zscaler
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/zscaler/zpacloud/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: zscaler
+    namespaces:
+    - zscaler
+    source_orgs:
+    - zscaler
+    matched_domain: null
+    matched_by: github-org-pointer
+    source_repos:
+    - https://github.com/zscaler/ziacloud-ansible
+    - https://github.com/zscaler/zpacloud-ansible
+    newest_update: '2026-08-27'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+    identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
+      repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
