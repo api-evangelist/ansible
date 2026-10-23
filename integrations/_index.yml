@@ -1475,6 +1475,45 @@
     all_deprecated: false
   status: not-a-workflow
   arazzo: null
+- slug: ansible-f5
+  label: F5
+  partner: f5
+  partner_name: F5
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/f5networks/f5_modules/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: f5devcentral, f5networks
+    namespaces:
+    - f5devcentral
+    - f5networks
+    source_orgs:
+    - f5devcentral
+    - f5networks
+    matched_domain: f5.com
+    matched_by: domain+name-among-holders
+    source_repos:
+    - https://github.com/F5Networks/f5-ansible-bigip
+    - https://github.com/F5Networks/f5-ansible-f5modules
+    - https://github.com/F5Networks/f5-ansible-f5os
+    - https://github.com/F5Networks/f5-ansible-next
+    - https://github.com/F5Networks/f5-beacon
+    - https://github.com/f5devcentral/f5-ansible-cloudservices
+    newest_update: '2026-10-21'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
+  status: not-a-workflow
+  arazzo: null
 - slug: ansible-fluence
   label: Fluence
   partner: fluence
@@ -3091,6 +3130,38 @@
       only as publisher_verified (weight 0). No tier: neither public registry publishes one'
     identity_note: the source-repo org is a GitHubOrganization pointer in this provider's apis.yml (no other live
       repo claims it) and the namespace / org name names the provider
+  status: not-a-workflow
+  arazzo: null
+- slug: ansible-portworx
+  label: Portworx
+  partner: portworx
+  partner_name: Portworx
+  category: configuration-management content listing (Ansible collection)
+  type: marketplace
+  marketplace: ansible-galaxy
+  channel: partner-built
+  evidence: https://galaxy.ansible.com/ui/repo/published/purepx/px_backup/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Ansible Galaxy
+    spec_file: null
+    role: ansible-galaxy-publisher
+    registered_name: purepx
+    namespaces:
+    - purepx
+    source_orgs:
+    - portworx
+    matched_domain: portworx.com
+    matched_by: domain
+    source_repos:
+    - https://github.com/portworx/px_backup_module
+    newest_update: '2026-09-08'
+    detected_by: sweep-config-management-content-registries.py
+    detected: '2026-10-22'
+    signal_note: 'one edge per (provider, registry); listing alone = participation. Collection / cookbook counts
+      and Galaxy download counts are context, never counted. A GitHub domain-verified source org -> badges, read
+      only as publisher_verified (weight 0). No tier: neither public registry publishes one'
   status: not-a-workflow
   arazzo: null
 - slug: ansible-prometheus
