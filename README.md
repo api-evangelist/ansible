@@ -1,4 +1,4 @@
-# Ansible (ansible)
+# Ansible
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,146 +66,204 @@
 
 Ansible is an open-source IT automation platform developed by Red Hat that provides agentless configuration management, application deployment, cloud provisioning, and orchestration. Using YAML-based playbooks and an SSH-native architecture, Ansible automates infrastructure at scale without requiring agents or custom security infrastructure on managed nodes.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/apis.yml)
+**Areas:** Ansible · Automation · Configuration Management · DevOps · Infrastructure as Code · Open Source · Orchestration · Red Hat
 
-## Tags
+## Ansible on APIs.io
 
-- Ansible
-- Automation
-- Configuration Management
-- DevOps
-- Infrastructure As Code
-- Open Source
-- Orchestration
-- Red Hat
+Everything profiled for Ansible is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ansible/](https://apis.io/providers/ansible/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (16)
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-05-19
+- [Ansible Automation Platform API](https://apis.io/apis/ansible/ansible-automation-platform-api/) — RESTful API for Ansible Automation Platform (formerly Ansible Tower) that provides programmatic access to job templates, inventories, credentials, workflow…
+- [AWX API](https://apis.io/apis/ansible/awx-api/) — AWX is the open-source upstream project for Ansible Automation Platform, providing a web-based UI, REST API, and task engine for Ansible under the Apache…
+- [Ansible Galaxy API](https://apis.io/apis/ansible/ansible-galaxy-api/) — REST API for Ansible Galaxy — the community hub for sharing and downloading Ansible roles and collections. The v1 API covers roles and the v3 API covers…
+- [Ansible Automation Hub API](https://apis.io/apis/ansible/ansible-automation-hub-api/) — The Red Hat Ansible Automation Hub API provides access to certified Ansible collections and roles curated by Red Hat and partners. Available through…
+- [Ansible Auth API](https://apis.io/apis/ansible/ansible-auth-api/) — OAuth2 token management.
+- [Ansible Credentials API](https://apis.io/apis/ansible/ansible-credentials-api/) — The Credentials API from Ansible — 1 operation(s) for credentials.
+- [Ansible Hosts API](https://apis.io/apis/ansible/ansible-hosts-api/) — The Hosts API from Ansible — 1 operation(s) for hosts.
+- [Ansible Inventories API](https://apis.io/apis/ansible/ansible-inventories-api/) — The Inventories API from Ansible — 2 operation(s) for inventories.
+- [Ansible Job Templates API](https://apis.io/apis/ansible/ansible-job-templates-api/) — The Job Templates API from Ansible — 3 operation(s) for job templates.
+- [Ansible Jobs API](https://apis.io/apis/ansible/ansible-jobs-api/) — The Jobs API from Ansible — 4 operation(s) for jobs.
+- [Ansible Organizations API](https://apis.io/apis/ansible/ansible-organizations-api/) — The Organizations API from Ansible — 2 operation(s) for organizations.
+- [Ansible Projects API](https://apis.io/apis/ansible/ansible-projects-api/) — The Projects API from Ansible — 3 operation(s) for projects.
+- [Ansible Schedules API](https://apis.io/apis/ansible/ansible-schedules-api/) — The Schedules API from Ansible — 1 operation(s) for schedules.
+- [Ansible Users API](https://apis.io/apis/ansible/ansible-users-api/) — The Users API from Ansible — 1 operation(s) for users.
+- [Ansible Workflow Job Templates API](https://apis.io/apis/ansible/ansible-workflow-job-templates-api/) — The Workflow Job Templates API from Ansible — 2 operation(s) for workflow job templates.
+- [Ansible Workflow Jobs API](https://apis.io/apis/ansible/ansible-workflow-jobs-api/) — The Workflow Jobs API from Ansible — 1 operation(s) for workflow jobs.
 
-## APIs
+### Published properties
 
-### Ansible Automation Platform API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-RESTful API for Ansible Automation Platform (formerly Ansible Tower) that provides programmatic access to job templates, inventories, credentials, workflow templates, schedules, notifications, and job execution. Supports OAuth2 authentication and delivers a comprehensive management interface for enterprise-scale Ansible deployments.
+#### MCP servers (1)
 
-- **Human URL:** [https://docs.ansible.com/automation-controller/latest/html/controllerapi/](https://docs.ansible.com/automation-controller/latest/html/controllerapi/)
-- **Base URL:** `https://your-controller-host/api/v2/`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [MCP Server](https://apis.io/servers/ansible/mcp-server/)
 
-- Ansible
-- Automation
-- Enterprise
-- Inventories
-- Jobs
-- Red Hat
-- Workflows
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Documentation](https://docs.ansible.com/automation-controller/latest/html/controllerapi/)
-- [API Reference](https://docs.ansible.com/automation-controller/latest/html/controllerapi/api_ref.html)
-- [Authentication](https://docs.ansible.com/automation-controller/latest/html/controllerapi/authentication.html)
-- [Getting Started](https://docs.ansible.com/automation-controller/latest/html/quickstart/)
-- [Postman Collection](collections/ansible.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ansible.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Ansible Agentic Access](https://apis.io/agentic-access/ansible/ansible-agentic-access/)
 
-### AWX API
+#### JSON Schema (1)
 
-AWX is the open-source upstream project for Ansible Automation Platform, providing a web-based UI, REST API, and task engine for Ansible under the Apache 2.0 license. The AWX API mirrors the AAP API surface for job management, inventory, credentials, workflow templates, and scheduling.
+The data models the API reads and writes.
 
-- **Human URL:** [https://github.com/ansible/awx](https://github.com/ansible/awx)
-- **Base URL:** `https://your-awx-host/api/v2/`
+- [Playbook](https://apis.io/schemas/ansible/ansible-playbook/)
 
-#### Tags
+#### JSON Structure (1)
 
-- Ansible
-- Automation
-- AWX
-- Jobs
-- Open Source
+Data models expressed in JSON Structure.
 
-#### Properties
+- [Ansible Playbook Structure](https://apis.io/json-structure/ansible/ansible-playbook-structure/)
 
-- [Documentation](https://ansible.readthedocs.io/projects/awx/en/latest/)
-- [API Reference](https://github.com/ansible/awx/blob/devel/docs/rest_api.md)
-- [GitHub Repository](https://github.com/ansible/awx)
-- [Getting Started](https://github.com/ansible/awx/blob/devel/INSTALL.md)
-- [Postman Collection](collections/ansible.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ansible.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### JSON-LD (1)
 
-### Ansible Galaxy API
+Linked-data contexts for the provider's vocabulary.
 
-REST API for Ansible Galaxy — the community hub for sharing and downloading Ansible roles and collections. The v1 API covers roles and the v3 API covers collections with namespace management, versioning, search, and content download capabilities.
+- [Ansible Context](https://apis.io/jsonld/ansible/ansible-context/)
 
-- **Human URL:** [https://galaxy.ansible.com/](https://galaxy.ansible.com/)
-- **Base URL:** `https://galaxy.ansible.com/api/`
+#### Vocabulary (1)
 
-#### Tags
+The provider's domain terms, defined.
 
-- Ansible
-- Collections
-- Community
-- Galaxy
-- Roles
+- [Ansible Vocabulary](https://apis.io/vocabularies/ansible/ansible-vocabulary/)
 
-#### Properties
+#### Examples (1)
 
-- [Documentation](https://galaxy.ansible.com/docs/)
-- [API Reference](https://galaxy.ansible.com/api/v3/)
-- [GitHub Repository](https://github.com/ansible/galaxy)
-- [Postman Collection](collections/ansible.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ansible.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Example requests and responses.
 
-### Ansible Automation Hub API
+- [Ansible Playbook Example](https://apis.io/examples/ansible/ansible-playbook-example/)
 
-The Red Hat Ansible Automation Hub API provides access to certified Ansible collections and roles curated by Red Hat and partners. Available through console.redhat.com, it serves certified content for enterprise Ansible Automation Platform deployments.
+#### Collections (25)
 
-- **Human URL:** [https://console.redhat.com/ansible/automation-hub](https://console.redhat.com/ansible/automation-hub)
-- **Base URL:** `https://console.redhat.com/api/automation-hub/v3/`
+Postman and Open Collection request collections.
 
-#### Tags
+- [Ansible Automation Controller API](https://apis.io/collections/ansible/open-ansible/)
+- [Ansible Automation Controller Auth API](https://apis.io/collections/ansible/open-ansible-auth-api/)
+- [Ansible Automation Controller Auth Credentials API](https://apis.io/collections/ansible/open-ansible-credentials-api/)
+- [Ansible Automation Controller Auth Hosts API](https://apis.io/collections/ansible/open-ansible-hosts-api/)
+- [Ansible Automation Controller Auth Inventories API](https://apis.io/collections/ansible/open-ansible-inventories-api/)
+- [Ansible Automation Controller Auth Job Templates API](https://apis.io/collections/ansible/open-ansible-job-templates-api/)
+- [Ansible Automation Controller Auth Jobs API](https://apis.io/collections/ansible/open-ansible-jobs-api/)
+- [Ansible Automation Controller Auth Organizations API](https://apis.io/collections/ansible/open-ansible-organizations-api/)
+- [Ansible Automation Controller Auth Projects API](https://apis.io/collections/ansible/open-ansible-projects-api/)
+- [Ansible Automation Controller Auth Schedules API](https://apis.io/collections/ansible/open-ansible-schedules-api/)
+- [Ansible Automation Controller Auth Users API](https://apis.io/collections/ansible/open-ansible-users-api/)
+- [Ansible Automation Controller Auth Workflow Job Templates API](https://apis.io/collections/ansible/open-ansible-workflow-job-templates-api/)
+- [Ansible Automation Controller Auth Workflow Jobs API](https://apis.io/collections/ansible/open-ansible-workflow-jobs-api/)
+- [Ansible Automation Controller Auth API](https://apis.io/collections/ansible/postman-ansible-auth-api/)
+- [Ansible Automation Controller Auth Credentials API](https://apis.io/collections/ansible/postman-ansible-credentials-api/)
+- [Ansible Automation Controller Auth Hosts API](https://apis.io/collections/ansible/postman-ansible-hosts-api/)
+- [Ansible Automation Controller Auth Inventories API](https://apis.io/collections/ansible/postman-ansible-inventories-api/)
+- [Ansible Automation Controller Auth Job Templates API](https://apis.io/collections/ansible/postman-ansible-job-templates-api/)
+- [Ansible Automation Controller Auth Jobs API](https://apis.io/collections/ansible/postman-ansible-jobs-api/)
+- [Ansible Automation Controller Auth Organizations API](https://apis.io/collections/ansible/postman-ansible-organizations-api/)
+- [Ansible Automation Controller Auth Projects API](https://apis.io/collections/ansible/postman-ansible-projects-api/)
+- [Ansible Automation Controller Auth Schedules API](https://apis.io/collections/ansible/postman-ansible-schedules-api/)
+- [Ansible Automation Controller Auth Users API](https://apis.io/collections/ansible/postman-ansible-users-api/)
+- [Ansible Automation Controller Auth Workflow Job Templates API](https://apis.io/collections/ansible/postman-ansible-workflow-job-templates-api/)
+- [Ansible Automation Controller Auth Workflow Jobs API](https://apis.io/collections/ansible/postman-ansible-workflow-jobs-api/)
 
-- Ansible
-- Certified Content
-- Collections
-- Enterprise
-- Red Hat
+#### Governance rules (2)
 
-#### Properties
+Spectral rulesets for the provider's contracts.
 
-- [Documentation](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/)
-- [API Reference](https://console.redhat.com/api/automation-hub/v3/)
-- [Portal](https://console.redhat.com/ansible/automation-hub)
-- [Postman Collection](collections/ansible.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ansible.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Ansible — ansible backstage plugins rules](https://apis.io/rules/ansible/ansible-ansible-backstage-plugins-spectral-rules/)
+- [Ansible — jsonschema rules](https://apis.io/rules/ansible/ansible-jsonschema-spectral-rules/)
 
-## Common Properties
+#### Security (3)
 
-- [LinkedIn](https://www.linkedin.com/company/ansible)
-- [Portal](https://www.ansible.com)
-- [Getting Started](https://docs.ansible.com/ansible/latest/getting_started/)
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ansible Authentication](https://apis.io/security/ansible/ansible-authentication/)
+- [Ansible Domain Security](https://apis.io/security/ansible/ansible-domain-security/)
+- [Ansible Vulnerability Disclosure](https://apis.io/security/ansible/ansible-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Ansible Plans Pricing](https://apis.io/plans/ansible/ansible-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Ansible Rate Limits](https://apis.io/rate-limits/ansible/ansible-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Ansible Finops](https://apis.io/finops/ansible/ansible-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://ansible.com)
 - [Documentation](https://docs.ansible.com/)
-- [Blog](https://www.ansible.com/blog)
-- [GitHub Organization](https://github.com/ansible)
-- [Forum](https://forum.ansible.com/)
+- [Getting started](https://docs.ansible.com/ansible/latest/getting_started/)
 - [Support](https://access.redhat.com/products/red-hat-ansible-automation-platform/)
-- [Training](https://www.ansible.com/products/training-certification)
-- [Terms of Service](https://www.redhat.com/en/about/terms-use)
-- [Privacy Policy](https://www.redhat.com/en/about/privacy-policy)
-- [SDK](https://pypi.org/project/ansible/)
-- [SDK](https://pypi.org/project/ansible-runner/)
-- [JSON Schema](https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/json-schema/ansible-playbook-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/ansible/refs/heads/main/vocabulary/ansible-vocabulary.yaml)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
-- [M C P Server](https://github.com/ansible/aap-mcp-server)
+- [Blog](https://www.ansible.com/blog)
+- [Terms of service](https://www.redhat.com/en/about/terms-use)
+- [Privacy policy](https://www.redhat.com/en/about/privacy-policy)
+- [GitHub](https://github.com/ansible)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** info@apievangelist.com
-**URL:** https://apievangelist.com
+**Kin Score 48.1** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 65.0 |
+| Contract quality | 49.0 |
+| Contract governance | 37.9 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 63.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 26.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | paginated |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ansible/](https://apis.io/providers/ansible/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ansible: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ansible/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
